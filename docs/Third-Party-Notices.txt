@@ -1,0 +1,82 @@
+UNICA — AI Creative Suite (Beta 1.0)
+Componenti e modelli di terze parti
+
+UNICA utilizza i componenti e i modelli elencati qui sotto. Ciascuno resta soggetto alla propria licenza; i testi completi
+disponibili sono nella cartella "licenses" dell'installazione. I modelli NON sono inclusi nel programma di installazione:
+vengono scaricati dalle fonti indicate, alla revisione indicata, e verificati con SHA-256 (elenco completo: installer\models_manifest.json).
+
+MODELLI
+- FLUX.2-klein-4B (immagini) — black-forest-labs/FLUX.2-klein-4B, revisione e7b7dc27f91d — Apache License 2.0.
+- ACE-Step 1.5 (musica: Turbo, LM 1.7B, Qwen3-Embedding-0.6B, VAE) — ACE-Step/Ace-Step1.5, revisione 19671f406d60 — MIT.
+- ACE-Step 1.5 XL-SFT (musica, motore predefinito) — ACE-Step/acestep-v15-xl-sft, revisione d06de46b4622 — MIT.
+- LTX-2.5 22B distilled, quantizzazione GGUF Q4_0 (video) — molbal/LTX-2.5-GGUF, revisione 879172c54c1f — LTX-2.x Community License
+  (testo completo: licenses\LTX-2.x-Community-License.txt).
+- LTX-2.5 componenti (VAE video e audio, upscaler latente, text encoder) — copia pubblica PowerProducer/unica-ltx-2.5-components
+  dei file ufficiali Lightricks/LTX-2.5 (revisione upstream 5e6e71018ee1, SHA-256 identici) — LTX-2.x Community License.
+  Il text encoder deriva da Gemma 4: si applicano anche le condizioni indicate da Google per Gemma.
+- HTDemucs (separazione della voce per il lipsync del canto) — adefossez/HTDemucs, revisione cbc8a9b1a870 — la scheda del modello NON dichiara
+  una licenza; il codice del progetto Demucs è distribuito con licenza MIT. Il README di Demucs non dice nulla sulla licenza dei pesi, addestrati
+  su MUSDB18-HQ più 800 brani aggiuntivi (licenza di quei dati non verificata). Componente da confermare prima della distribuzione.
+- LTX-2.3 22B dev in formato NVFP4, LoRA distillato 384-1.1 e upscaler spaziale x2-1.1 (componente «Personaggio parlante» / Parla) —
+  Lightricks/LTX-2.3-nvfp4 (revisione 018336568969) e Lightricks/LTX-2.3 (revisione 3c6a4e66) — LTX-2 Community License Agreement.
+- Gemma 3 12B in formato fp4 mixed (codificatore del testo di LTX-2.3) — Comfy-Org/ltx-2 (revisione ccde4ba4), riconfezionamento del modello
+  Gemma 3 di Google: si applicano le Gemma Terms of Use (https://ai.google.dev/gemma/terms) e il Prohibited Use Policy di Google
+  (https://ai.google.dev/gemma/prohibited_use_policy). Gemma is provided under and subject to the Gemma Terms of Use.
+- Kokoro-82M (voce parlata, italiano e inglese) — hexgrad/Kokoro-82M, revisione f3ff35717913 — Apache License 2.0.
+- Whisper small in formato CTranslate2 (controllo di comprensibilità della voce) — Systran/faster-whisper-small, revisione 536b0662742c — MIT
+  (modello Whisper di OpenAI, licenza MIT).
+- JoyVASA (movimento del viso dalla voce) e LivePortrait (rendering del viso, modello di punti del volto a 203 punti) — jdh-algo/JoyVASA e
+  KwaiVGI/LivePortrait — MIT. Codificatore audio chinese-hubert-base — TencentGameMate/chinese-hubert-base — MIT (come dichiarato nel manifest).
+- YuNet (rilevatore di volti del labiale) — OpenCV Zoo, opencv/opencv_zoo, file face_detection_yunet_2023mar.onnx — MIT (come dichiarato dal
+  README della cartella; non sono stati esaminati i termini dei dati di addestramento). Sostituisce, dal 2026-10-10, i file del modello
+  insightface (buffalo_l: det_10g, 2d106det), che sono per sola ricerca non commerciale e NON fanno più parte di UNICA.
+- Aiko (assistente conversazionale, componente del setup): usa un piccolo modello linguistico locale sul solo processore, Qwen3.5 2B
+  quantizzato Q4_K_M (Alibaba Cloud/Qwen, Apache License 2.0), scaricato dal registro pubblico di Ollama con il nome qwen3.5:2b-q4_K_M ed
+  eseguito dal programma Ollama (MIT, ollama/ollama, versione 0.40.2). Se sul computer c'è già un Ollama in esecuzione il setup lo usa così com'è;
+  altrimenti scarica lo zip ufficiale (impronta SHA-256 verificata) nella cartella di UNICA, senza le librerie per scheda video, e lo avvia solo
+  per Aiko. Né il modello né Ollama sono contenuti nel setup. Senza modello Aiko capisce solo le richieste chiare.
+
+SOFTWARE INCLUSO
+- ComfyUI (usato dal motore video LTX) — GNU General Public License v3.0 (licenses\ComfyUI-GPL-3.0.txt).
+  Il worker video di UNICA (app\vendor\ltx_lab: runner, worker persistente, nodi ComfyUI-GGUF modificati, kernel CUDA
+  q40_fused con il suo sorgente q40_fused.cu) è distribuito sotto GPL-3.0; il codice sorgente è incluso nell'installazione.
+- ComfyUI-GGUF (modificato) — Apache License 2.0 (app\vendor\ltx_lab\ComfyUI-GGUF\LICENSE).
+- ACE-Step (codice) — MIT (app\vendor\acestep\LICENSE); contiene nano-vllm (MIT, app\vendor\acestep\third_parts\nano-vllm\LICENSE).
+- JoyVASA e LivePortrait (codice, app\vendor\joyvasa) — MIT. Contiene una copia del codice di insightface (MIT), usata soltanto da
+  un'opzione di laboratorio che non fa parte della configurazione predefinita e senza pesi inclusi.
+- OpenCV (opencv-python, Apache License 2.0) — esegue il rilevatore YuNet.
+- FFmpeg 8.1.1 essentials build — GPL (licenses\ffmpeg-LICENSE.txt); usato come programma separato.
+- uv (Astral) — MIT oppure Apache-2.0 (licenses\uv).
+- cloudflared (Cloudflare, solo per l'accesso remoto opzionale dell'Agent Bridge) — Apache License 2.0 (licenses\cloudflared).
+- Componente «Voce» (pacchetti Python installati dai rispettivi indici ufficiali nell'ambiente app\.venv_speech, non inclusi nel setup):
+  kokoro e misaki (Apache-2.0); espeak-ng tramite espeakng-loader (GNU General Public License v3.0: è il convertitore testo-fonemi
+  usato da Kokoro per l'italiano, eseguito nel processo separato del motore voce; il pacchetto espeakng-loader è MIT e include la libreria eSpeak NG, GPL-3.0) e phonemizer-fork (GNU General Public License v3 o successiva, stesso uso); spaCy e il modello en_core_web_sm (MIT);
+  faster-whisper (MIT), CTranslate2 (MIT), ONNX Runtime (MIT), PyAV (BSD-3-Clause; contiene librerie FFmpeg, LGPL).
+- Python (Python Software Foundation License), PyTorch (BSD), PySide6/Qt (LGPL-3.0) e gli altri pacchetti Python installati
+  dai rispettivi indici ufficiali: versioni esatte in installer\freeze; ciascuno con la propria licenza.
+
+PACCHETTI PYTHON (380 pacchetti distinti in 8 ambienti)
+L'elenco COMPLETO, con nome, versione e licenza dichiarata di ciascun pacchetto, è in licenses\python-packages-licenses.txt. In sintesi:
+- Quasi tutti sono con licenza permissiva (MIT, BSD, Apache-2.0, PSF).
+- GPL: comfy-aimdo (GPL-3.0) e comfyui-embedded-docs (GPL-3.0), nell'ambiente del motore video insieme a ComfyUI (GPL-3.0); phonemizer-fork
+  (GPL-3.0 o successiva) nell'ambiente della voce. ComfyUI Frontend (comfyui_frontend_package): licenza GPL-3.0, dichiarata dal repository del progetto (il pacchetto non la riporta nei metadati).
+- LGPL: PySide6 e shiboken6 (Qt for Python), frozendict, num2words, soxr, lameenc. Sono librerie separate, sostituibili dall'utente
+  installando un'altra versione nell'ambiente corrispondente.
+- MPL-2.0: certifi, orjson, tqdm, shtab.
+- Licenza non riportata nei metadati ma verificata alla fonte (2026-10-10): espeakng-loader (MIT, con eSpeak NG GPL-3.0), sphn (Apache-2.0), comfyui_frontend_package (GPL-3.0).
+Questi pacchetti non sono modificati da UNICA e non sono inclusi nel programma di installazione: vengono scaricati dagli indici ufficiali.
+
+CONDIZIONI D'USO DEI MODELLI CHE PASSANO ALL'UTENTE
+- Modelli LTX (LTX-2.x Community License / LTX-2 Community License Agreement, Lightricks): uso gratuito per chi ha ricavi annui inferiori a
+  10 milioni di dollari (sommati tra società collegate); sopra tale soglia serve un accordo commerciale con Lightricks. L'uso è soggetto
+  alle restrizioni dell'Allegato A di quella licenza (tra l'altro: violazione di leggi, danni a minori, informazioni false dannose,
+  dati personali, contenuti generati non dichiarati come tali, diffamazione e molestie, imitazione e deepfake senza consenso,
+  decisioni automatizzate su diritti legali, discriminazione, consigli medici, attività militari o ad alto danno, malware,
+  elusione dei filtri di sicurezza, addestramento di altri modelli a fini commerciali, prodotti in concorrenza con Lightricks).
+  Il testo completo e vincolante è quello inglese in licenses\LTX-2.x-Community-License.txt.
+- Gemma (Google): uso soggetto alle Gemma Terms of Use e al Prohibited Use Policy citati sopra.
+
+SERVIZI REMOTI OPZIONALI
+UNICA funziona interamente in locale. Gli assistenti AI esterni (tramite Agent Bridge) e il provider LLM remoto opzionale
+(es. Cloudflare Workers AI) si usano solo per scelta esplicita dell'utente, con il proprio account e alle condizioni del fornitore.
+UNICA non contiene credenziali, Account ID o chiavi API di alcun servizio.

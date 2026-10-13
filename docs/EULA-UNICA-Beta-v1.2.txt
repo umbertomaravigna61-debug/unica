@@ -1,0 +1,97 @@
+UNICA — AI Creative Suite
+Contratto di Licenza con l'Utente Finale (EULA) — Versione Beta 1.2
+
+1. Licenziante
+Il presente Contratto di Licenza con l'Utente Finale (“EULA”) disciplina l'utilizzo della versione Beta del software UNICA — AI Creative Suite (“UNICA” o il “Software”).
+Il Licenziante è:
+Umberto Maravigna
+L'installazione, l'accesso o l'utilizzo di UNICA comportano l'accettazione delle condizioni del presente EULA.
+
+2. Natura della versione Beta
+UNICA viene fornita, nella presente fase, come versione Beta, destinata principalmente a prova, valutazione e sperimentazione.
+La versione Beta può contenere funzionalità incomplete, sperimentali, temporaneamente indisponibili o soggette a modifica.
+Il Licenziante può modificare, aggiornare, sospendere o ritirare funzionalità della versione Beta durante il periodo di sperimentazione.
+
+3. Concessione della licenza
+Al rispetto del presente EULA, il Licenziante concede all'utente una licenza:
+
+* gratuita;
+* limitata;
+* revocabile;
+* non esclusiva;
+* non trasferibile;
+
+per installare e utilizzare UNICA, nel rispetto del presente EULA.
+La presente licenza Beta non costituisce vendita o trasferimento della proprietà del Software.
+
+4. Elaborati dell'utente e attribuzione
+Gli elaborati creati dall'utente con UNICA (immagini, brani musicali, video e altri contenuti) possono essere utilizzati liberamente dall'utente, anche per finalità commerciali o professionali.
+L'unica condizione è che, quando un elaborato viene pubblicato, distribuito o comunicato al pubblico, l'utente dichiari in modo esplicito e visibile che è stato creato con UNICA, ad esempio con la dicitura «Creato con UNICA — AI Creative Suite» nei crediti, nella descrizione o in altra posizione idonea.
+Restano fermi i diritti di terzi, la normativa applicabile e le condizioni delle licenze dei modelli e dei componenti di terze parti utilizzati per la generazione (articolo 6).
+
+5. Proprietà del Software
+UNICA, la sua interfaccia, il codice proprietario, gli elementi grafici originali, l'organizzazione del Software e gli altri elementi sviluppati specificamente per UNICA rimangono di proprietà dei rispettivi titolari.
+La licenza concessa dal presente EULA non trasferisce all'utente alcun diritto di proprietà sul Software.
+
+6. Componenti e modelli di terze parti
+UNICA può integrare o utilizzare software, librerie, runtime, modelli di intelligenza artificiale e altri componenti sviluppati da terzi.
+Tali componenti rimangono soggetti alle rispettive licenze e condizioni d'uso.
+Le disposizioni del presente EULA non intendono limitare diritti concessi direttamente all'utente dalle licenze dei componenti di terze parti né sostituire tali licenze.
+Quando richiesto dalle relative licenze, UNICA mette a disposizione le informazioni, attribuzioni e condizioni applicabili ai componenti di terze parti.
+
+6-bis. Condizioni d'uso dei modelli di terze parti che passano all'utente
+Alcuni modelli scaricati da UNICA sono concessi dai rispettivi titolari a condizioni che l'utente accetta e che il Licenziante è tenuto a far rispettare:
+a) Modelli LTX (Lightricks; LTX-2.x Community License e LTX-2 Community License Agreement, testo completo e vincolante, in inglese, nella cartella "licenses" dell'installazione). L'uso è gratuito per l'utente, singolo o società, i cui ricavi annui, sommati a quelli delle società collegate, sono inferiori a 10 milioni di dollari. Sopra tale soglia l'utente deve ottenere da Lightricks un accordo commerciale prima di utilizzare i modelli LTX con UNICA.
+b) L'utente si impegna a non usare i modelli LTX, né direttamente né tramite UNICA, in violazione delle restrizioni d'uso dell'Allegato A di quella licenza, che comprendono in particolare: violazione di leggi applicabili; danni a minori; informazioni false dannose; uso illecito di dati personali; contenuti generati dalla macchina non dichiarati come tali nei casi previsti; diffamazione, molestie e abusi; imitazione di persone e deepfake senza consenso; decisioni interamente automatizzate su diritti legali; discriminazioni; consigli e interpretazioni mediche; attività di giustizia, polizia, immigrazione; attività militari, di armi o ad alto danno; malware; elusione dei sistemi di sicurezza o dei filtri di contenuto; addestramento di altri modelli a fini commerciali; prodotti in concorrenza diretta con Lightricks. La violazione può comportare la cessazione immediata del diritto di usare quei modelli.
+c) Modelli Gemma (Google), usati come codificatore del testo di alcuni motori video: l'uso è soggetto alle Gemma Terms of Use (https://ai.google.dev/gemma/terms) e al Prohibited Use Policy di Google (https://ai.google.dev/gemma/prohibited_use_policy), che l'utente si impegna a rispettare.
+d) Gli altri componenti sono soggetti alle licenze indicate nell'elenco "Componenti e modelli di terze parti" mostrato durante l'installazione.
+In caso di conflitto tra il presente EULA e la licenza di un modello su un punto che riguarda quel modello, prevale la licenza del modello.
+
+7. Servizi remoti e account esterni
+Alcune funzionalità di UNICA possono consentire l'utilizzo facoltativo di servizi remoti o servizi forniti da terzi.
+L'eventuale utilizzo di tali servizi può richiedere un account, credenziali o chiavi API appartenenti all'utente ed è soggetto anche alle condizioni stabilite dal relativo fornitore.
+UNICA non garantisce la disponibilità permanente di servizi forniti da soggetti terzi.
+
+8. Telemetria e dati diagnostici
+L'eventuale raccolta di telemetria, informazioni diagnostiche o dati destinati al miglioramento della versione Beta deve essere chiaramente indicata all'utente e gestita separatamente.
+L'eventuale partecipazione a sistemi facoltativi di telemetria non costituisce condizione implicita per l'utilizzo delle funzionalità locali del Software, salvo diversa informazione esplicita fornita all'utente.
+
+9. Restrizioni
+Salvo quanto consentito dalla legge applicabile o dalle licenze dei componenti di terze parti, l'utente non può:
+
+* vendere, sublicenziare o redistribuire UNICA come proprio prodotto;
+* rimuovere o alterare indicazioni di copyright, licenza o attribuzione;
+* aggirare deliberatamente eventuali sistemi di licenza, attivazione o protezione;
+* utilizzare il nome, il logo o gli elementi identificativi di UNICA in modo da suggerire un'autorizzazione o affiliazione non concessa;
+* utilizzare la versione Beta in violazione del presente EULA o della legge applicabile.
+
+Nulla nel presente articolo limita i diritti inderogabili riconosciuti all'utente dalla legge o quelli concessi separatamente dalle licenze open source e dalle altre licenze di terze parti.
+
+10. Software Beta fornito “così com'è”
+La versione Beta di UNICA viene fornita “così com'è” (“as is”) e può contenere errori, malfunzionamenti, incompatibilità, funzionalità incomplete o variazioni di comportamento.
+L'utente riconosce che la versione Beta è destinata alla sperimentazione e non deve essere considerata equivalente a una versione definitiva destinata alla produzione.
+È pertanto opportuno non affidare alla versione Beta dati o attività per i quali un errore, una perdita di dati o un'interruzione possano determinare conseguenze rilevanti.
+
+11. Limitazione di responsabilità
+Nei limiti consentiti dalla legge applicabile, il Licenziante non è responsabile per danni indiretti, perdita di dati, mancati guadagni, interruzioni dell'attività o altri danni derivanti dall'utilizzo sperimentale della versione Beta.
+La presente disposizione non esclude né limita responsabilità che non possano essere escluse o limitate ai sensi della legge applicabile.
+
+12. Aggiornamenti e modifiche
+Durante il periodo Beta UNICA può ricevere aggiornamenti frequenti.
+Funzioni, interfacce, modelli, motori e requisiti tecnici possono essere aggiunti, modificati o rimossi.
+Una successiva versione definitiva di UNICA potrà essere distribuita secondo condizioni di licenza differenti dalla presente EULA Beta.
+
+13. Durata e cessazione
+La licenza Beta rimane valida fino alla sua cessazione, alla scadenza eventualmente comunicata dal Licenziante o alla sostituzione della versione Beta con una versione successiva soggetta a nuove condizioni.
+In caso di violazione sostanziale del presente EULA, il diritto dell'utente a utilizzare la versione Beta può cessare.
+
+14. Legge applicabile
+Il presente EULA è disciplinato dalla legge italiana, fatti salvi i diritti inderogabili riconosciuti all'utente dalla normativa applicabile.
+Qualunque disposizione del presente EULA risultasse inefficace o inapplicabile non pregiudica, nei limiti consentiti dalla legge, la validità delle restanti disposizioni.
+
+15. Accettazione
+Installando o utilizzando UNICA — AI Creative Suite Beta, l'utente dichiara di aver letto e accettato il presente Contratto di Licenza con l'Utente Finale.
+
+UNICA — AI Creative Suite
+EULA Beta v1.2
+Licenziante: Umberto Maravigna
