@@ -17,6 +17,7 @@ one song, single runs):
 | Lab script, song stage (AR) | 4120 tok in 439.0 s — 9.4 tok/s | 4000 tok in 76.5 s — 52.3 tok/s (5.6×) |
 | Lab script, plan stage | 1578 tok in 127.0 s — 12.4 tok/s | 1635 tok in 28.5 s — 57.4 tok/s (4.6×) |
 | UNICA runner, plan+song end to end | 3648 tok in 477.9 s — 0.131 s/tok | 3047 tok in 87.1 s — 0.0286 s/tok (**4.58×**) |
+| UNICA runner, same seed 8, back to back | 3648 tok in 648.4 s — 0.178 s/tok | 3997 tok in 120.3 s — 0.0301 s/tok (**5.9×**) |
 | Peak VRAM, AR stage | 6.88 GB | 6.74 GB |
 | Load / NAR 4 steps / VAE | 6.7 s / 42.0 s / 6.4 s | 5.8 s / 28.8 s / 5.3 s |
 
@@ -24,9 +25,11 @@ Full stage‑by‑stage tables, exact revisions, `pip freeze`, reproduction comm
 patch and the benchmark scripts are here:
 https://github.com/umbertomaravigna61-debug/unica/tree/main/contrib/yue2-fp8-cuda-graph
 
-**Output / stability.** Four complete graph runs, no errors, audio normal. The graph path is not bit‑identical to
-eager with the same seed (seed 8: 3648 tokens eager vs 4000 with the graph); a controlled same‑seed A/B listening
-test (same NAR steps) is prepared and I will add the result to the folder above.
+**Output / stability.** Five complete graph runs, no errors, audio normal. Each path is deterministic with a fixed
+seed (eager seed 8 gave exactly 3648 tokens on two different days), but the two paths are not identical to each
+other: in a same‑seed A/B they diverge at the second token (3648 vs 3997 tokens; 0.2 % position‑wise equal), as
+expected from a different attention kernel under sampling. Listening verdict on that pair (same NAR steps) is in
+the write‑up, §5d.
 
 **Two independent findings while doing this:**
 1. `attention_backend="auto"` selects FlashAttention on the official Windows torch 2.10.0+cu128 build (the

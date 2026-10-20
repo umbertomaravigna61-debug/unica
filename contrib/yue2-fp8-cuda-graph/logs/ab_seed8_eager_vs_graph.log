@@ -1,0 +1,33 @@
+# A/B same seed (8), same lyrics/style, NAR 4 steps: [A] eager vs [B] FP8 CUDA graph (cuDNN) — UNICA runner, 2026-10-20 22:36-22:52 CEST. Progress lines removed.
+# ===== A: EAGER seed 8 ===== 
+{"event": "phase", "phase": "loading", "message": "Loading YuE2-3B (FP8 in memory)..."}
+{"event": "phase", "phase": "composing", "message": "Planning the score and composing the song..."}
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\Acer\Desktop\unica\app\.venv_yue2\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  self.register_buffer("weight", weight.to(device))
+{"event": "phase", "phase": "composing", "message": "Song composed: 3648 tokens in 648.4 s"}
+{"event": "phase", "phase": "synthesizing", "message": "Refining audio (4 steps)..."}
+{"event": "phase", "phase": "synthesizing", "message": "Audio refined in 41.4 s (peak VRAM 5.46 GB)"}
+{"event": "phase", "phase": "decoding", "message": "Decoding audio (VAE)..."}
+C:\Users\Acer\Desktop\unica\app\.venv_yue2\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"success": true, "path": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\ab_balla_con_me_seed8\\eager\\music.wav", "semantic": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\ab_balla_con_me_seed8\\eager\\semantic.pkl", "latents": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\ab_balla_con_me_seed8\\eager\\latents_nar4.pt", "telemetry": {"engine": "yue2-3b", "quantization": "fp8", "nar_steps": 4, "max_tokens": 6000, "seed": 8, "query_chunk": 256, "cuda_graph": false, "torch": "2.10.0+cu128", "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU", "model": "C:\\Users\\Acer\\Desktop\\unica\\models\\yue2\\YuE2-3B", "vae": "C:\\Users\\Acer\\Desktop\\unica\\models\\yue2\\YuE2-Vae", "load_s": 19.5, "compose_s": 648.4, "truncated": false, "tokens": 3648, "song_seconds_est": 145.9, "peak_vram_ar_gb": 6.88, "nar_s": 41.4, "peak_vram_nar_gb": 5.46, "vae_s": 6.4, "audio_seconds": 145.92, "sample_rate_hz": 48000, "total_s": 724.5, "peak_rss_gb": 11.92}}
+# ===== B: GRAPH seed 8 ===== 
+{"event": "phase", "phase": "loading", "message": "Loading YuE2-3B (FP8 in memory)..."}
+{"event": "phase", "phase": "composing", "message": "Planning the score and composing the song..."}
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\Acer\Desktop\unica\app\.venv_yue2\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  self.register_buffer("weight", weight.to(device))
+{"event": "phase", "phase": "composing", "message": "CUDA graph (FP8) on, attention backend cudnn"}
+{"event": "phase", "phase": "composing", "message": "CUDA graph (FP8) on, attention backend cudnn"}
+{"event": "phase", "phase": "composing", "message": "Song composed: 3997 tokens in 120.3 s"}
+{"event": "phase", "phase": "synthesizing", "message": "Refining audio (4 steps)..."}
+{"event": "phase", "phase": "synthesizing", "message": "Audio refined in 48.3 s (peak VRAM 5.49 GB)"}
+{"event": "phase", "phase": "decoding", "message": "Decoding audio (VAE)..."}
+C:\Users\Acer\Desktop\unica\app\.venv_yue2\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"success": true, "path": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\ab_balla_con_me_seed8\\graph\\music.wav", "semantic": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\ab_balla_con_me_seed8\\graph\\semantic.pkl", "latents": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\ab_balla_con_me_seed8\\graph\\latents_nar4.pt", "telemetry": {"engine": "yue2-3b", "quantization": "fp8", "nar_steps": 4, "max_tokens": 6000, "seed": 8, "query_chunk": 256, "cuda_graph": true, "torch": "2.10.0+cu128", "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU", "model": "C:\\Users\\Acer\\Desktop\\unica\\models\\yue2\\YuE2-3B", "vae": "C:\\Users\\Acer\\Desktop\\unica\\models\\yue2\\YuE2-Vae", "load_s": 7.7, "compose_s": 120.3, "truncated": false, "tokens": 3997, "song_seconds_est": 159.9, "peak_vram_ar_gb": 7.03, "nar_s": 48.3, "peak_vram_nar_gb": 5.49, "vae_s": 6.5, "audio_seconds": 159.88, "sample_rate_hz": 48000, "total_s": 186.9, "peak_rss_gb": 12.02}}
+A tokens: 3648
+B tokens: 3997
+identical prefix: 2 tokens (diverge at token 2)
+position-wise equal tokens over the first 3648: 7 (0.2 %)

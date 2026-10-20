@@ -15,10 +15,11 @@ the song stage alone measures 5.6x in the lab script.
 
 I have also opened the issue in the YuE repository: <link to the GitHub issue>
 
-Two honest notes. The graph path is not bit-identical to eager with the same seed (the token count
-differs), so I have prepared a same-seed A/B with identical NAR steps and will add the listening result
-and the token comparison to the same folder. And all numbers come from one machine and single runs —
-one data point, not a benchmark.
+Two honest notes. The graph path is not bit-identical to eager: in a same-seed A/B run back to back
+(same lyrics, same NAR steps) the two token sequences diverge at the second token, while each path on
+its own is deterministic (eager seed 8 gave exactly 3648 tokens on two different days). The A/B timings,
+the token comparison and my listening verdict on the pair are in the write-up. And all numbers come
+from one machine and single runs — a data point, not a benchmark.
 
 Two independent findings are in the same write-up: attention_backend="auto" selects FlashAttention on
 the official Windows torch build where it is not compiled, and nar._offload_ar fails with FP8 weights
