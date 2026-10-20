@@ -1,0 +1,15 @@
+# UNICA runner (yue2_runner.py), seed 11, NAR 4, FP8 CUDA graph ON (cudnn) — 2026-10-19
+{"event": "phase", "phase": "loading", "message": "Loading YuE2-3B (FP8 in memory)..."}
+{"event": "phase", "phase": "composing", "message": "Planning the score and composing the song..."}
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\Acer\Desktop\unica\app\.venv_yue2\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  self.register_buffer("weight", weight.to(device))
+{"event": "phase", "phase": "composing", "message": "CUDA graph (FP8) on, attention backend cudnn"}
+{"event": "phase", "phase": "composing", "message": "CUDA graph (FP8) on, attention backend cudnn"}
+{"event": "phase", "phase": "composing", "message": "Song composed: 3047 tokens in 87.1 s"}
+{"event": "phase", "phase": "synthesizing", "message": "Refining audio (4 steps)..."}
+{"event": "phase", "phase": "synthesizing", "message": "Audio refined in 28.8 s (peak VRAM 5.49 GB)"}
+{"event": "phase", "phase": "decoding", "message": "Decoding audio (VAE)..."}
+C:\Users\Acer\Desktop\unica\app\.venv_yue2\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+{"success": true, "path": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\runner_balla_con_me_seed11\\music_nar4.wav", "semantic": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\runner_balla_con_me_seed11\\semantic.pkl", "latents": "C:\\Users\\Acer\\UNICA-Chronos-Lab\\yue2\\out\\runner_balla_con_me_seed11\\latents_nar4.pt", "telemetry": {"engine": "yue2-3b", "quantization": "fp8", "nar_steps": 4, "max_tokens": 6000, "seed": 11, "query_chunk": 256, "cuda_graph": true, "torch": "2.10.0+cu128", "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU", "model": "C:\\Users\\Acer\\Desktop\\unica\\models\\yue2\\YuE2-3B", "vae": "C:\\Users\\Acer\\Desktop\\unica\\models\\yue2\\YuE2-Vae", "load_s": 5.8, "compose_s": 87.1, "truncated": false, "tokens": 3047, "song_seconds_est": 121.9, "peak_vram_ar_gb": 6.74, "nar_s": 28.8, "peak_vram_nar_gb": 5.49, "vae_s": 5.3, "audio_seconds": 121.88, "sample_rate_hz": 48000, "total_s": 131.2, "peak_rss_gb": 12.05}}

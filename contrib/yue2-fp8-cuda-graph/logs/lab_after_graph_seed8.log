@@ -1,0 +1,122 @@
+# Lab script genera.py, yue2_infer 0.1.5 PATCHED (FP8 CUDA graph, cudnn attention), seed 8 — 2026-10-15
+# command: set YUE2_GRAPH=1 & .venv\Scripts\python.exe genera.py balla_con_me 8 fp8 256
+# 1st attempt = attention_backend auto -> flash -> fails on Windows torch (see issue, finding 3); 2nd attempt = cudnn -> OK
+[lab] balla_con_me_seed8 quant=fp8 max_tokens=6000 query_chunk=256
+[YuE2] Starting Resolving model files: elapsed 0.0s
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files: 100%|##########| 11/11 [00:00<00:00, 5498.43it/s]
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files: 100%|##########| 8/8 [00:00<00:00, 3999.81it/s]
+[YuE2] Completed Resolving model files: elapsed 1.0s
+[YuE2] Starting Verifying model files: elapsed 0.0s
+[YuE2] Running Verifying model files: elapsed 5.0s
+[YuE2] Completed Verifying model files: elapsed 5.7s
+[lab] CUDA graph in FP8: ATTIVO (sperimentale)
+[YuE2] Starting Loading model: elapsed 0.0s
+`torch_dtype` is deprecated! Use `dtype` instead!
+[YuE2] Running Loading model: elapsed 5.0s
+[YuE2] Completed Loading model: elapsed 7.6s
+[YuE2] Starting Planning score: 0 tokens | 0.0 tokens/s | elapsed 0.0s
+[YuE2] Failed Planning score: 0 tokens | 0.0 tokens/s | elapsed 0.4s
+Traceback (most recent call last):
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\genera.py", line 96, in <module>
+    plan = pipe.plan(request=request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\pipeline.py", line 266, in plan
+    ids, timing, truncated = self._generate(token_prefixes(request, self.tokenizer), sampling,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\pipeline.py", line 249, in _generate
+    result = generate_tokens(model, prefix, sampling, seed, phase,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\sampling.py", line 93, in generate_tokens
+    logits = graph.prefill()
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\cuda_graph.py", line 204, in prefill
+    self._capture()
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\cuda_graph.py", line 181, in _capture
+    self._decode()
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\cuda_graph.py", line 146, in _decode
+    h = torch.ops.aten._flash_attention_forward(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\_ops.py", line 1209, in __call__
+    return self._op(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: USE_FLASH_ATTENTION was not enabled for build.
+[lab] balla_con_me_seed8 quant=fp8 max_tokens=6000 query_chunk=256
+[YuE2] Starting Resolving model files: elapsed 0.0s
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files: 100%|##########| 11/11 [00:00<00:00, 3667.52it/s]
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files: 100%|##########| 8/8 [00:00<00:00, 2665.80it/s]
+[YuE2] Completed Resolving model files: elapsed 1.0s
+[YuE2] Starting Verifying model files: elapsed 0.0s
+[YuE2] Running Verifying model files: elapsed 5.0s
+[YuE2] Completed Verifying model files: elapsed 5.3s
+[lab] CUDA graph in FP8: ATTIVO (sperimentale)
+[YuE2] Starting Loading model: elapsed 0.0s
+`torch_dtype` is deprecated! Use `dtype` instead!
+[YuE2] Running Loading model: elapsed 5.0s
+[YuE2] Completed Loading model: elapsed 5.8s
+[YuE2] Starting Planning score: 0 tokens | 0.0 tokens/s | elapsed 0.0s
+[lab] GraphAR attention backend = cudnn
+[YuE2] Running Planning score: 253 tokens | 50.6 tokens/s | elapsed 5.0s
+[YuE2] Running Planning score: 548 tokens | 54.8 tokens/s | elapsed 10.0s
+[YuE2] Running Planning score: 843 tokens | 56.2 tokens/s | elapsed 15.0s
+[YuE2] Running Planning score: 1137 tokens | 56.9 tokens/s | elapsed 20.0s
+[YuE2] Running Planning score: 1431 tokens | 57.2 tokens/s | elapsed 25.0s
+[YuE2] Completed Planning score: 1635 tokens | 57.4 tokens/s | elapsed 28.5s
+[YuE2] Starting Generating song: 0 tokens | 0.0 tokens/s | elapsed 0.0s
+[lab] GraphAR attention backend = cudnn
+[YuE2] Running Generating song: 219 tokens | 43.8 tokens/s | elapsed 5.0s
+[YuE2] Running Generating song: 490 tokens | 49.0 tokens/s | elapsed 10.0s
+[YuE2] Running Generating song: 763 tokens | 50.9 tokens/s | elapsed 15.0s
+[YuE2] Running Generating song: 1035 tokens | 51.8 tokens/s | elapsed 20.0s
+[YuE2] Running Generating song: 1307 tokens | 52.2 tokens/s | elapsed 25.0s
+[YuE2] Running Generating song: 1573 tokens | 52.4 tokens/s | elapsed 30.0s
+[YuE2] Running Generating song: 1836 tokens | 52.4 tokens/s | elapsed 35.0s
+[YuE2] Running Generating song: 2098 tokens | 52.4 tokens/s | elapsed 40.0s
+[YuE2] Running Generating song: 2360 tokens | 52.4 tokens/s | elapsed 45.0s
+[YuE2] Running Generating song: 2622 tokens | 52.4 tokens/s | elapsed 50.0s
+[YuE2] Running Generating song: 2884 tokens | 52.4 tokens/s | elapsed 55.0s
+[YuE2] Running Generating song: 3140 tokens | 52.3 tokens/s | elapsed 60.0s
+[YuE2] Running Generating song: 3397 tokens | 52.2 tokens/s | elapsed 65.1s
+[YuE2] Running Generating song: 3660 tokens | 52.2 tokens/s | elapsed 70.1s
+[YuE2] Running Generating song: 3923 tokens | 52.3 tokens/s | elapsed 75.1s
+[YuE2] Completed Generating song: 4000 tokens | 52.3 tokens/s | elapsed 76.5s
+[lab] token salvati: 3999 in 110.8 s
+[lab] sintesi con pesi AR in FP8
+[lab] flusso AR parcheggiato in RAM; VRAM residente 3.47 GB
+[YuE2] Starting Synthesizing audio: 0 steps | elapsed 0.0s
+[YuE2] Failed Synthesizing audio: 0 steps | elapsed 4.0s
+Traceback (most recent call last):
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\nar.py", line 215, in _offload_ar
+    device = next(module.parameters()).device
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\genera.py", line 124, in <module>
+    latents = _nar.synthesize(model, semantic.plan.prefix, semantic.tokens, semantic.plan.request.seed,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\nar.py", line 251, in synthesize
+    with _offload_ar(model, offload_ar):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Acer\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+RuntimeError: generator raised StopIteration
