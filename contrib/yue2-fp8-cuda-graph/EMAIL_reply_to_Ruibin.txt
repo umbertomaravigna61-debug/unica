@@ -1,0 +1,31 @@
+Subject: Re: YuE2 in UNICA — FP8 CUDA graph patch, logs and measurements
+
+Hi Ruibin,
+
+Thank you. I have put everything in one place, in the form you asked for:
+
+https://github.com/umbertomaravigna61-debug/unica/tree/main/contrib/yue2-fp8-cuda-graph
+
+It contains the unified patch against the yue2_infer 0.1.5 wheel, the exact code/model revisions
+(YuE2-3B 8f24312, YuE2-Vae 152733a, torch 2.10.0+cu128, full pip freeze), the reproduction commands,
+the before/after logs, and the timings separated into load, plan, song (AR), NAR and decode, with peak
+VRAM and peak RSS for each run. The eager baseline is in the same tables; the 4.5x figure is the
+per-token composing time in the UNICA runner (0.131 s/token eager vs 0.0286 s/token with the graph),
+the song stage alone measures 5.6x in the lab script.
+
+I have also opened the issue in the YuE repository: <link to the GitHub issue>
+
+Two honest notes. The graph path is not bit-identical to eager: in a same-seed A/B run back to back
+(same lyrics, same NAR steps) the two token sequences diverge at the second token, while each path on
+its own is deterministic (eager seed 8 gave exactly 3648 tokens on two different days). The A/B timings,
+the token comparison and my listening verdict on the pair are in the write-up. And all numbers come
+from one machine and single runs — a data point, not a benchmark.
+
+Two independent findings are in the same write-up: attention_backend="auto" selects FlashAttention on
+the official Windows torch build where it is not compiled, and nar._offload_ar fails with FP8 weights
+because FP8Linear has buffers rather than parameters.
+
+I will send the public 1.1 link as soon as it is up.
+
+Best regards,
+Umberto

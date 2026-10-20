@@ -1,0 +1,24 @@
+--- a/yue2/sampling.py
++++ b/yue2/sampling.py
+@@ -83,7 +83,7 @@
+ 
+     graph = None
+     positive_cache = negative_cache = None
+-    graph_enabled = use_cuda_graph and device.type == "cuda" and not getattr(model, "_yue2_fp8_originals", {})
++    graph_enabled = use_cuda_graph and device.type == "cuda" and (not getattr(model, "_yue2_fp8_originals", {}) or __import__("os").environ.get("YUE2_GRAPH")=="1")
+     synchronize(device)
+     start = time.perf_counter()
+     try:
+--- a/yue2/cuda_graph.py
++++ b/yue2/cuda_graph.py
+@@ -60,8 +60,9 @@
+         linears = [module for layer in model.model.layers for module in
+                    (layer.self_attn.q_proj, layer.self_attn.k_proj, layer.self_attn.v_proj,
+                     layer.self_attn.o_proj, layer.mlp.gate_proj, layer.mlp.up_proj, layer.mlp.down_proj)]
++        from .quantization import FP8Linear as _FP8
+         if getattr(model, "_yue2_fp8_originals", None) or any(
+-                not isinstance(module, torch.nn.Linear) or module.weight.dtype != self.dtype for module in linears):
++                not isinstance(module, (torch.nn.Linear, _FP8)) or (isinstance(module, torch.nn.Linear) and module.weight.dtype != self.dtype) for module in linears):
+             raise ValueError("GraphAR only supports unquantized standard AR Linear layers; use eager for FP8")
+         if capture and self.device.type != "cuda":
+             raise ValueError("CUDA graphs require a CUDA model; capture=False is for diagnostics")

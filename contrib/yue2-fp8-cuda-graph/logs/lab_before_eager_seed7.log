@@ -1,0 +1,135 @@
+# Lab script genera.py, yue2_infer 0.1.5 UNMODIFIED library (eager), FP8, seed 7 — 2026-10-15
+# command: set YUE2_GRAPH=0 & .venv\Scripts\python.exe genera.py balla_con_me 7 fp8 256
+[lab] balla_con_me_seed7 quant=fp8 max_tokens=6000 query_chunk=256
+[YuE2] Starting Resolving model files: elapsed 0.0s
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]
+Fetching 11 files: 100%|##########| 11/11 [00:00<00:00, 3667.81it/s]
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]
+Fetching 8 files: 100%|##########| 8/8 [00:00<00:00, 2666.65it/s]
+[YuE2] Completed Resolving model files: elapsed 1.0s
+[YuE2] Starting Verifying model files: elapsed 0.0s
+[YuE2] Running Verifying model files: elapsed 5.0s
+[YuE2] Completed Verifying model files: elapsed 5.6s
+[YuE2] Starting Loading model: elapsed 0.0s
+`torch_dtype` is deprecated! Use `dtype` instead!
+C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  self.register_buffer("weight", weight.to(device))
+[YuE2] Running Loading model: elapsed 5.0s
+[YuE2] Completed Loading model: elapsed 5.9s
+[YuE2] Starting Planning score: 0 tokens | 0.0 tokens/s | elapsed 0.0s
+[YuE2] Running Planning score: 72 tokens | 14.4 tokens/s | elapsed 5.0s
+[YuE2] Running Planning score: 153 tokens | 15.3 tokens/s | elapsed 10.0s
+[YuE2] Running Planning score: 233 tokens | 15.5 tokens/s | elapsed 15.0s
+[YuE2] Running Planning score: 313 tokens | 15.6 tokens/s | elapsed 20.0s
+[YuE2] Running Planning score: 394 tokens | 15.7 tokens/s | elapsed 25.0s
+[YuE2] Running Planning score: 474 tokens | 15.8 tokens/s | elapsed 30.0s
+[YuE2] Running Planning score: 555 tokens | 15.8 tokens/s | elapsed 35.0s
+[YuE2] Running Planning score: 634 tokens | 15.8 tokens/s | elapsed 40.1s
+[YuE2] Running Planning score: 715 tokens | 15.9 tokens/s | elapsed 45.1s
+[YuE2] Running Planning score: 794 tokens | 15.9 tokens/s | elapsed 50.1s
+[YuE2] Running Planning score: 864 tokens | 15.7 tokens/s | elapsed 55.1s
+[YuE2] Running Planning score: 927 tokens | 15.4 tokens/s | elapsed 60.1s
+[YuE2] Running Planning score: 992 tokens | 15.2 tokens/s | elapsed 65.1s
+[YuE2] Running Planning score: 1034 tokens | 14.7 tokens/s | elapsed 70.1s
+[YuE2] Running Planning score: 1072 tokens | 14.3 tokens/s | elapsed 75.1s
+[YuE2] Running Planning score: 1110 tokens | 13.9 tokens/s | elapsed 80.1s
+[YuE2] Running Planning score: 1146 tokens | 13.5 tokens/s | elapsed 85.2s
+[YuE2] Running Planning score: 1184 tokens | 13.1 tokens/s | elapsed 90.2s
+[YuE2] Running Planning score: 1220 tokens | 12.8 tokens/s | elapsed 95.2s
+[YuE2] Running Planning score: 1258 tokens | 12.6 tokens/s | elapsed 100.2s
+[YuE2] Running Planning score: 1297 tokens | 12.3 tokens/s | elapsed 105.2s
+[YuE2] Running Planning score: 1361 tokens | 12.3 tokens/s | elapsed 110.2s
+[YuE2] Running Planning score: 1426 tokens | 12.4 tokens/s | elapsed 115.2s
+[YuE2] Running Planning score: 1489 tokens | 12.4 tokens/s | elapsed 120.2s
+[YuE2] Running Planning score: 1555 tokens | 12.4 tokens/s | elapsed 125.2s
+[YuE2] Completed Planning score: 1578 tokens | 12.4 tokens/s | elapsed 127.0s
+[YuE2] Starting Generating song: 0 tokens | 0.0 tokens/s | elapsed 0.0s
+[YuE2] Running Generating song: 57 tokens | 11.4 tokens/s | elapsed 5.0s
+[YuE2] Running Generating song: 125 tokens | 12.5 tokens/s | elapsed 10.0s
+[YuE2] Running Generating song: 189 tokens | 12.6 tokens/s | elapsed 15.0s
+[YuE2] Running Generating song: 252 tokens | 12.6 tokens/s | elapsed 20.0s
+[YuE2] Running Generating song: 319 tokens | 12.7 tokens/s | elapsed 25.0s
+[YuE2] Running Generating song: 381 tokens | 12.7 tokens/s | elapsed 30.1s
+[YuE2] Running Generating song: 446 tokens | 12.7 tokens/s | elapsed 35.1s
+[YuE2] Running Generating song: 509 tokens | 12.7 tokens/s | elapsed 40.1s
+[YuE2] Running Generating song: 546 tokens | 12.1 tokens/s | elapsed 45.1s
+[YuE2] Running Generating song: 583 tokens | 11.6 tokens/s | elapsed 50.1s
+[YuE2] Running Generating song: 620 tokens | 11.3 tokens/s | elapsed 55.1s
+[YuE2] Running Generating song: 658 tokens | 10.9 tokens/s | elapsed 60.1s
+[YuE2] Running Generating song: 695 tokens | 10.7 tokens/s | elapsed 65.1s
+[YuE2] Running Generating song: 733 tokens | 10.5 tokens/s | elapsed 70.1s
+[YuE2] Running Generating song: 770 tokens | 10.2 tokens/s | elapsed 75.2s
+[YuE2] Running Generating song: 808 tokens | 10.1 tokens/s | elapsed 80.2s
+[YuE2] Running Generating song: 844 tokens | 9.9 tokens/s | elapsed 85.2s
+[YuE2] Running Generating song: 881 tokens | 9.8 tokens/s | elapsed 90.2s
+[YuE2] Running Generating song: 918 tokens | 9.6 tokens/s | elapsed 95.2s
+[YuE2] Running Generating song: 956 tokens | 9.5 tokens/s | elapsed 100.2s
+[YuE2] Running Generating song: 992 tokens | 9.4 tokens/s | elapsed 105.2s
+[YuE2] Running Generating song: 1034 tokens | 9.4 tokens/s | elapsed 110.2s
+[YuE2] Running Generating song: 1072 tokens | 9.3 tokens/s | elapsed 115.2s
+[YuE2] Running Generating song: 1111 tokens | 9.2 tokens/s | elapsed 120.2s
+[YuE2] Running Generating song: 1150 tokens | 9.2 tokens/s | elapsed 125.2s
+[YuE2] Running Generating song: 1189 tokens | 9.1 tokens/s | elapsed 130.3s
+[YuE2] Running Generating song: 1231 tokens | 9.1 tokens/s | elapsed 135.3s
+[YuE2] Running Generating song: 1270 tokens | 9.1 tokens/s | elapsed 140.3s
+[YuE2] Running Generating song: 1308 tokens | 9.0 tokens/s | elapsed 145.3s
+[YuE2] Running Generating song: 1346 tokens | 9.0 tokens/s | elapsed 150.3s
+[YuE2] Running Generating song: 1383 tokens | 8.9 tokens/s | elapsed 155.3s
+[YuE2] Running Generating song: 1421 tokens | 8.9 tokens/s | elapsed 160.3s
+[YuE2] Running Generating song: 1460 tokens | 8.8 tokens/s | elapsed 165.3s
+[YuE2] Running Generating song: 1498 tokens | 8.8 tokens/s | elapsed 170.3s
+[YuE2] Running Generating song: 1533 tokens | 8.7 tokens/s | elapsed 175.3s
+[YuE2] Running Generating song: 1572 tokens | 8.7 tokens/s | elapsed 180.3s
+[YuE2] Running Generating song: 1612 tokens | 8.7 tokens/s | elapsed 185.3s
+[YuE2] Running Generating song: 1651 tokens | 8.7 tokens/s | elapsed 190.4s
+[YuE2] Running Generating song: 1690 tokens | 8.7 tokens/s | elapsed 195.4s
+[YuE2] Running Generating song: 1729 tokens | 8.6 tokens/s | elapsed 200.4s
+[YuE2] Running Generating song: 1766 tokens | 8.6 tokens/s | elapsed 205.4s
+[YuE2] Running Generating song: 1805 tokens | 8.6 tokens/s | elapsed 210.4s
+[YuE2] Running Generating song: 1844 tokens | 8.6 tokens/s | elapsed 215.4s
+[YuE2] Running Generating song: 1883 tokens | 8.5 tokens/s | elapsed 220.4s
+[YuE2] Running Generating song: 1922 tokens | 8.5 tokens/s | elapsed 225.4s
+[YuE2] Running Generating song: 1960 tokens | 8.5 tokens/s | elapsed 230.5s
+[YuE2] Running Generating song: 1995 tokens | 8.5 tokens/s | elapsed 235.5s
+[YuE2] Running Generating song: 2030 tokens | 8.4 tokens/s | elapsed 240.5s
+[YuE2] Running Generating song: 2068 tokens | 8.4 tokens/s | elapsed 245.5s
+[YuE2] Running Generating song: 2113 tokens | 8.4 tokens/s | elapsed 250.5s
+[YuE2] Running Generating song: 2175 tokens | 8.5 tokens/s | elapsed 255.5s
+[YuE2] Running Generating song: 2243 tokens | 8.6 tokens/s | elapsed 260.5s
+[YuE2] Running Generating song: 2306 tokens | 8.7 tokens/s | elapsed 265.5s
+[YuE2] Running Generating song: 2369 tokens | 8.8 tokens/s | elapsed 270.5s
+[YuE2] Running Generating song: 2435 tokens | 8.8 tokens/s | elapsed 275.5s
+[YuE2] Running Generating song: 2486 tokens | 8.9 tokens/s | elapsed 280.5s
+[YuE2] Running Generating song: 2525 tokens | 8.8 tokens/s | elapsed 285.6s
+[YuE2] Running Generating song: 2564 tokens | 8.8 tokens/s | elapsed 290.6s
+[YuE2] Running Generating song: 2603 tokens | 8.8 tokens/s | elapsed 295.6s
+[YuE2] Running Generating song: 2639 tokens | 8.8 tokens/s | elapsed 300.6s
+[YuE2] Running Generating song: 2678 tokens | 8.8 tokens/s | elapsed 305.6s
+[YuE2] Running Generating song: 2729 tokens | 8.8 tokens/s | elapsed 310.6s
+[YuE2] Running Generating song: 2788 tokens | 8.8 tokens/s | elapsed 315.6s
+[YuE2] Running Generating song: 2836 tokens | 8.8 tokens/s | elapsed 320.6s
+[YuE2] Running Generating song: 2872 tokens | 8.8 tokens/s | elapsed 325.6s
+[YuE2] Running Generating song: 2909 tokens | 8.8 tokens/s | elapsed 330.6s
+[YuE2] Running Generating song: 2946 tokens | 8.8 tokens/s | elapsed 335.6s
+[YuE2] Running Generating song: 2984 tokens | 8.8 tokens/s | elapsed 340.6s
+[YuE2] Running Generating song: 3023 tokens | 8.7 tokens/s | elapsed 345.6s
+[YuE2] Running Generating song: 3062 tokens | 8.7 tokens/s | elapsed 350.6s
+[YuE2] Running Generating song: 3113 tokens | 8.8 tokens/s | elapsed 355.6s
+[YuE2] Running Generating song: 3173 tokens | 8.8 tokens/s | elapsed 360.7s
+[YuE2] Running Generating song: 3233 tokens | 8.8 tokens/s | elapsed 365.7s
+[YuE2] Running Generating song: 3296 tokens | 8.9 tokens/s | elapsed 370.7s
+[YuE2] Running Generating song: 3354 tokens | 8.9 tokens/s | elapsed 375.7s
+[YuE2] Running Generating song: 3416 tokens | 9.0 tokens/s | elapsed 380.7s
+[YuE2] Running Generating song: 3476 tokens | 9.0 tokens/s | elapsed 385.7s
+[YuE2] Running Generating song: 3536 tokens | 9.1 tokens/s | elapsed 390.7s
+[YuE2] Running Generating song: 3599 tokens | 9.1 tokens/s | elapsed 395.7s
+[YuE2] Running Generating song: 3662 tokens | 9.1 tokens/s | elapsed 400.7s
+[YuE2] Running Generating song: 3721 tokens | 9.2 tokens/s | elapsed 405.7s
+[YuE2] Running Generating song: 3784 tokens | 9.2 tokens/s | elapsed 410.7s
+[YuE2] Running Generating song: 3838 tokens | 9.2 tokens/s | elapsed 415.8s
+[YuE2] Running Generating song: 3900 tokens | 9.3 tokens/s | elapsed 420.8s
+[YuE2] Running Generating song: 3960 tokens | 9.3 tokens/s | elapsed 425.8s
+[YuE2] Running Generating song: 4020 tokens | 9.3 tokens/s | elapsed 430.8s
+[YuE2] Running Generating song: 4081 tokens | 9.4 tokens/s | elapsed 435.8s
+[YuE2] Completed Generating song: 4120 tokens | 9.4 tokens/s | elapsed 439.0s
+[lab] token salvati: 4119 in 571.9 s
