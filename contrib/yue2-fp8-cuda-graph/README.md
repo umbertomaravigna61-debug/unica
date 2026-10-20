@@ -158,6 +158,36 @@ the two paths differ from each other from the second token on.
 
 Listening (author, headphones, 4 NAR steps): *to be filled in after listening.*
 
+### 5e. Signal analysis of the A/B pair (author's measurements on the two WAV files)
+
+Both files: WAV 24‑bit, 48 kHz, stereo. Measured, not listened (the plots in [`analysis/`](analysis/); in the plot
+legends "AEGER" means eager).
+
+| Parameter | [A] eager | [B] graph |
+|---|---|---|
+| Duration | 2:25.9 | 2:39.9 |
+| Integrated loudness | −13.54 LUFS | −14.03 LUFS |
+| RMS | −15.92 dBFS | −16.17 dBFS |
+| Digital peak / true peak (est.) | 0.00 dBFS / +0.15 dBTP | −1.32 dBFS / −1.27 dBTP |
+| Crest factor | 15.92 dB | 14.85 dB |
+| RMS range P95–P5 | 5.36 dB | 7.78 dB |
+| Stereo correlation L/R | 0.844 | 0.826 |
+| Side/Mid | −10.72 dB | −10.21 dB |
+| Spectral centroid / 85 % roll‑off | 683 Hz / 990 Hz | 613 Hz / 879 Hz |
+| Energy 20‑60 / 60‑250 / 250‑2k / 2‑6k / 6‑16k Hz | 10.3 / 46.5 / 37.7 / 3.4 / 2.2 % | 18.8 / 44.4 / 30.7 / 4.1 / 2.0 % |
+| Tempo candidates (autocorrelation) | 127.8 / 87.9 BPM | 127.8 / 87.9 BPM |
+| Cosine similarity, global chroma / spectral distribution | 0.907 / 0.894 | |
+
+Reading: the two outputs are technically equivalent (same format, loudness within 0.5 LU, same tempo candidates,
+high spectral and chroma similarity); the remaining differences (sub‑bass share, mid‑range share, dynamic range)
+are of the kind one gets between two different takes of the same song, not signs of a degraded path. The only
+technical flag — a true peak above 0 dBTP — is on the **eager** output, so it is not attributable to the graph.
+No artefacts (clicks, dropouts, noise bursts) are visible in either spectrogram. Vocal quality, instrument
+definition and lyric intelligibility were not measured; that is the listening verdict above.
+
+![signal analysis](analysis/ab_seed8_signal_analysis.png)
+![spectrograms](analysis/ab_seed8_spectrograms.png)
+
 ## 6. Stability, output differences, and other findings
 
 1. **Stability.** Five complete graph runs on this machine (two lab songs, three runner songs, 3000‑4000 tokens
@@ -203,6 +233,8 @@ logs/runner_before_eager_seed8.jsonl    UNICA runner, eager baseline (telemetry 
 logs/runner_after_graph_seed11.jsonl    UNICA runner, graph
 logs/lab_risultati.jsonl                lab result lines (all runs, incl. NAR-steps series)
 logs/ab_seed8_eager_vs_graph.log        same-seed A/B, eager then graph, UNICA runner, 2026-10-20
+analysis/ab_seed8_signal_analysis.png   RMS, LUFS, PSD, onsets, band energy, chroma of the A/B pair
+analysis/ab_seed8_spectrograms.png      spectrograms of the A/B pair
 logs/pip_freeze_venv_yue2.txt           dependency versions
 bench/lab_genera.py                     lab script (stage by stage; includes the 8 GB workarounds)
 bench/balla_con_me.style.txt / .lyrics.txt

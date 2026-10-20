@@ -28,8 +28,10 @@ https://github.com/umbertomaravigna61-debug/unica/tree/main/contrib/yue2-fp8-cud
 **Output / stability.** Five complete graph runs, no errors, audio normal. Each path is deterministic with a fixed
 seed (eager seed 8 gave exactly 3648 tokens on two different days), but the two paths are not identical to each
 other: in a same‑seed A/B they diverge at the second token (3648 vs 3997 tokens; 0.2 % position‑wise equal), as
-expected from a different attention kernel under sampling. Listening verdict on that pair (same NAR steps) is in
-the write‑up, §5d.
+expected from a different attention kernel under sampling. A signal analysis of that pair (loudness, true peak,
+crest factor, band energy, spectrograms, chroma) finds the two outputs technically equivalent — same tempo
+candidates, loudness within 0.5 LU, chroma similarity 0.91, no artefacts; the only true‑peak overshoot is on the
+eager side. Tables, plots and the listening verdict are in the write‑up, §5d‑5e.
 
 **Two independent findings while doing this:**
 1. `attention_backend="auto"` selects FlashAttention on the official Windows torch 2.10.0+cu128 build (the
