@@ -156,7 +156,11 @@ Determinism: eager seed 8 produced **exactly 3648 tokens on both days** (2026‑
 tokens in the lab script (2026‑10‑15) and 3997 in the runner (2026‑10‑20). Each path is reproducible with a fixed seed;
 the two paths differ from each other from the second token on.
 
-Listening (author, headphones, 4 NAR steps): *to be filled in after listening.*
+Listening (author, headphones, 4 NAR steps): the two outputs are of equal quality — voice, arrangement and lyrics
+hold up the same way in both, no artefacts heard in either. Subjectively the graph take sounds slightly louder and
+deeper; the author prefers it, but states that this is a matter of taste, not a technical judgement (the measured
+loudness in §5e is in fact 0.5 LU lower for the graph take, so the impression comes from its larger sub‑bass share
+and dynamic range).
 
 ### 5e. Signal analysis of the A/B pair (author's measurements on the two WAV files)
 
