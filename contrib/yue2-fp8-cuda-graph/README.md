@@ -10,8 +10,10 @@ reproduced elsewhere yet, so please treat the numbers as one data point.
 (`"GraphAR only supports unquantized standard AR Linear layers; use eager for FP8"`), so FP8 users always
 run the slow eager loop. Two small changes let `GraphAR` accept the `FP8Linear` modules that the eager path
 already uses. On an RTX 5060 Laptop (8 GB) the composing stage (plan + song tokens) goes from
-**~7.6 tokens/s (eager) to ~35 tokens/s (graph, cuDNN attention)** end to end in the UNICA runner, i.e.
-**4.5×** per token; the song stage alone goes from 9.4 to 52.3 tokens/s (5.6×) in the lab script.
+**~5.6‑7.6 tokens/s (eager) to ~33‑35 tokens/s (graph, cuDNN attention)** end to end in the UNICA runner, i.e.
+**4.6×‑5.9× per token** over three runs; the song stage alone goes from 9.4 to 52.3 tokens/s (5.6×) in the lab script.
+A same‑seed A/B (§5d) shows the two paths are deterministic but not identical: they diverge at the second token,
+as expected from a different attention kernel under sampling.
 
 The patch is deliberately minimal and keeps the default behaviour unchanged: the FP8 graph is only taken when
 the environment variable `YUE2_GRAPH=1` is set (that is how it was measured; a proper keyword argument would be
@@ -130,17 +132,43 @@ changes; the runner now reports which path it took). The composing time is the e
 | 16 | 174.5 s | approved as production quality |
 | 32 | 351.9 s | reference |
 
+### 5d. Same‑seed A/B, back to back, UNICA runner (`bench/ab_eager_vs_graph.bat`, 2026‑10‑20, [log](logs/ab_seed8_eager_vs_graph.log))
+
+Seed 8, same lyrics/style, NAR 4 steps, `--graph 0` then `--graph 1 --graph-attn cudnn`, nothing else changed.
+The machine was busier than on 2026‑10‑19 (eager load 19.5 s instead of 6.7 s), which is why the eager figure is
+slower than in §5b; the graph figure is the same within 5 %.
+
+| | [A] eager | [B] FP8 CUDA graph (cuDNN) |
+|---|---|---|
+| Load | 19.5 s | 7.7 s |
+| Compose = plan + song | 3648 tokens in 648.4 s → **0.178 s/token** | 3997 tokens in 120.3 s → **0.0301 s/token** (**5.9×**) |
+| Peak VRAM, AR stage | 6.88 GB | 7.03 GB |
+| NAR refine, 4 steps | 41.4 s (145.9 s of audio) | 48.3 s (159.9 s of audio) — same per second of audio |
+| Peak VRAM, NAR stage | 5.46 GB | 5.49 GB |
+| VAE decode | 6.4 s | 6.5 s |
+| Peak process RSS | 11.9 GB | 12.0 GB |
+| Total | 724.5 s | 186.9 s |
+
+Token comparison (`bench/compare_tokens.py`): A = 3648 tokens, B = 3997 tokens, identical prefix = 2 tokens,
+position‑wise equal tokens over the first 3648 = 7 (0.2 %).
+
+Determinism: eager seed 8 produced **exactly 3648 tokens on both days** (2026‑10‑19 and ‑20); the graph produced 4000
+tokens in the lab script (2026‑10‑15) and 3997 in the runner (2026‑10‑20). Each path is reproducible with a fixed seed;
+the two paths differ from each other from the second token on.
+
+Listening (author, headphones, 4 NAR steps): *to be filled in after listening.*
+
 ## 6. Stability, output differences, and other findings
 
-1. **Stability.** Four complete graph runs on this machine (two lab songs, two runner songs, 3000‑4000 tokens
+1. **Stability.** Five complete graph runs on this machine (two lab songs, three runner songs, 3000‑4000 tokens
    each) completed without errors, no NaN/garbage tokens, no `truncated` flags; audio was normal on listening.
    No crash was observed after the attention backend was fixed (finding 3). This is a small sample.
-2. **Output differences.** The graph path is **not bit‑identical** to eager with the same seed: seed 8 produced
-   3648 tokens eager and 4000 tokens with the graph (different kernels → different logits → different samples
-   once sampling diverges). We have not yet done a controlled same‑seed A/B listening test eager vs graph with
-   the same NAR steps; `bench/ab_eager_vs_graph.bat` is prepared for that and the result will be added here.
-   Subjectively the graph‑generated songs are of the same quality as the eager ones, but that is the author's
-   ear, not a measurement.
+2. **Output differences.** The graph path is **not bit‑identical** to eager with the same seed, and the divergence
+   is immediate, not accumulated: in the same‑seed A/B (§5d) the two token sequences share only the first 2 tokens.
+   That is what one expects when a different attention kernel (cuDNN fused attention in the graph vs the eager
+   path) produces slightly different logits and the sampler takes a different branch at the first close call; each
+   path on its own is deterministic. We did not compare logits directly. Whether the graph path changes the
+   *quality* of the output is a listening question; the author's verdict on the A/B pair is in §5d.
 3. **`attention_backend="auto"` picks FlashAttention on Windows, where it is not built.** The feature test in
    `GraphAR.__init__` (`hasattr(torch.ops.aten, "_flash_attention_forward")` + schema check) passes on the
    official Windows `torch 2.10.0+cu128`, but the first capture fails with
@@ -174,6 +202,7 @@ logs/lab_after_graph_seed8.log          lab script, graph (first attempt flash �
 logs/runner_before_eager_seed8.jsonl    UNICA runner, eager baseline (telemetry line)
 logs/runner_after_graph_seed11.jsonl    UNICA runner, graph
 logs/lab_risultati.jsonl                lab result lines (all runs, incl. NAR-steps series)
+logs/ab_seed8_eager_vs_graph.log        same-seed A/B, eager then graph, UNICA runner, 2026-10-20
 logs/pip_freeze_venv_yue2.txt           dependency versions
 bench/lab_genera.py                     lab script (stage by stage; includes the 8 GB workarounds)
 bench/balla_con_me.style.txt / .lyrics.txt
