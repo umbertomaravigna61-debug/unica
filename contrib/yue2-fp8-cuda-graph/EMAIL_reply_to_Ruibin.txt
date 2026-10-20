@@ -11,14 +11,16 @@ It contains the unified patch against the yue2_infer 0.1.5 wheel, the exact code
 the before/after logs, and the timings separated into load, plan, song (AR), NAR and decode, with peak
 VRAM and peak RSS for each run. The eager baseline is in the same tables; the 4.5x figure is the
 per-token composing time in the UNICA runner (0.131 s/token eager vs 0.0286 s/token with the graph),
-the song stage alone measures 5.6x in the lab script.
+the song stage alone measures 5.6x in the lab script, and a same-seed A/B run back to back today
+gave 5.9x.
 
-I have also opened the issue in the YuE repository: <link to the GitHub issue>
+I have also opened the issue in the YuE repository: https://github.com/multimodal-art-projection/YuE/issues/262
 
 Two honest notes. The graph path is not bit-identical to eager: in a same-seed A/B run back to back
 (same lyrics, same NAR steps) the two token sequences diverge at the second token, while each path on
 its own is deterministic (eager seed 8 gave exactly 3648 tokens on two different days). The A/B timings,
-the token comparison and my listening verdict on the pair are in the write-up. And all numbers come
+the token comparison, a signal analysis (loudness, true peak, crest factor, band energy, spectrograms,
+chroma: technically equivalent) and my listening note (equal quality to my ear) are in the write-up. And all numbers come
 from one machine and single runs — a data point, not a benchmark.
 
 Two independent findings are in the same write-up: attention_backend="auto" selects FlashAttention on
