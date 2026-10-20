@@ -27,7 +27,7 @@ nicer, see §7).
 | PyTorch | `2.10.0+cu128` (official Windows wheel — built **without** FlashAttention) |
 | transformers / accelerate / safetensors | 4.57.6 / 1.13.0 / 0.7.0 (full `pip freeze`: [`logs/pip_freeze_venv_yue2.txt`](logs/pip_freeze_venv_yue2.txt)) |
 | Python | CPython 3.12.11 |
-| OS / GPU | Windows 11 64‑bit, NVIDIA GeForce RTX 5060 Laptop GPU (8 GB, PCIe 4.0 ×4), 32 GB DDR4 RAM, NVIDIA driver `<fill in from nvidia-smi>` |
+| OS / GPU | Windows 11 64‑bit, NVIDIA GeForce RTX 5060 Laptop GPU (8 GB, PCIe 4.0 ×4), 32 GB DDR4 RAM, NVIDIA driver 610.88 (WDDM, CUDA UMD 13.3) |
 
 ## 3. The patch
 
