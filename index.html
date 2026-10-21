@@ -108,11 +108,11 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
 <main>
 <section id="top" class="hero">
   <div class="wrap">
-    <div class="pill">Versione 1.0 Beta · gratuita · Windows · NVIDIA</div>
+    <div class="pill">Versione 1.1 Beta · gratuita · Windows · NVIDIA</div>
     <h1>Immagini, musica e video.<br>Generati sul tuo PC.</h1>
     <p class="sub">UNICA è una suite creativa con intelligenza artificiale che lavora interamente sul tuo computer. Gratuita, senza cloud e senza abbonamenti: quello che crei resta tuo.</p>
     <div class="row">
-      <a class="btn btn-primary" href="#download">Scarica UNICA 1.0 Beta</a>
+      <a class="btn btn-primary" href="#download">Scarica UNICA 1.1 Beta</a>
       <a class="btn btn-ghost" href="#requisiti">Il mio PC va bene?</a>
     </div>
     <p class="small">Windows 64 bit · setup 160 MB · i modelli si scaricano dopo, verificati uno per uno</p>
@@ -127,7 +127,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
     </div>
     <div class="grid4">
       <article class="card"><img src="assets/ico-immagini.png" alt=""><h3 style="color:#34d3c0">Immagini</h3><p>Illustrazioni e foto realistiche da una descrizione, anche partendo da una tua immagine di riferimento.</p><p class="eng">Motore: FLUX.2-klein 4B</p></article>
-      <article class="card"><img src="assets/ico-musica.png" alt=""><h3 style="color:#d29bff">Musica</h3><p>Canzoni complete con il tuo testo e strumentali: qualità alta oppure modalità veloce per le prove.</p><p class="eng">Motore: ACE-Step 1.5 (XL-SFT e Turbo)</p></article>
+      <article class="card"><img src="assets/ico-musica.png" alt=""><h3 style="color:#d29bff">Musica</h3><p>Canzoni cantate composte dal tuo testo, in italiano e in altre lingue, con rifinitura audio regolabile; strumentali e modalità veloce per le prove.</p><p class="eng">Motore: YuE2-3B (dalla 1.1) · ACE-Step 1.5 come alternativa</p></article>
       <article class="card"><img src="assets/ico-video.png" alt=""><h3 style="color:#39d98a">Video</h3><p>Clip e videoclip musicali, anche animando le immagini e i brani che hai già creato.</p><p class="eng">Motore: LTX-2.5</p></article>
       <article class="card"><img src="assets/ico-cantante.png" alt=""><h3 style="color:#ffb370">Cantante in scena</h3><p>Il cantante del videoclip muove le labbra sulla voce del brano.</p><p class="eng">Labiale con LTX e JoyVASA</p></article>
     </div>
@@ -169,7 +169,9 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
         <thead><tr><th scope="col">Lavoro</th><th scope="col">Formato</th><th scope="col">Tempo misurato</th></tr></thead>
         <tbody>
           <tr><td>Immagine</td><td class="f">1024 × 1024</td><td>circa 100–270 s (il primo avvio è più lento)</td></tr>
-          <tr><td>Musica, qualità alta (XL-SFT)</td><td class="f">brano di prova da 10 s</td><td>90–130 s</td></tr>
+          <tr><td>Musica, canto (YuE2, 4 passi di rifinitura)</td><td class="f">canzone completa da 2:30</td><td>circa 3 minuti</td></tr>
+          <tr><td>Musica, stessa canzone rifinita di nuovo (YuE2, 2 passi)</td><td class="f">canzone da 2:30</td><td>circa 50 s</td></tr>
+          <tr><td>Musica, qualità alta (ACE-Step XL-SFT)</td><td class="f">brano di prova da 10 s</td><td>90–130 s</td></tr>
           <tr><td>Musica, modalità veloce (Turbo)</td><td class="f">brano di prova da 10 s</td><td>26–37 s</td></tr>
           <tr><td>Video</td><td class="f">inquadratura da 5 s, 768 × 448, 121 fotogrammi</td><td>circa 70 s</td></tr>
           <tr><td>Videoclip completo</td><td class="f">canzone, immagini, inquadrature e montaggio</td><td>circa 1 minuto di lavoro per ogni secondo di video</td></tr>
@@ -205,17 +207,27 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
 
 <section id="download">
   <div class="dl">
-    <h2 style="font-size:clamp(28px,4vw,36px);line-height:1.15">Scarica UNICA 1.0 Beta</h2>
-    <p>UNICA è gratuita. Quello che crei è tuo: puoi usarlo liberamente, anche per lavoro. Ti chiediamo una cosa sola: dichiarare che è stato creato con UNICA. Scaricando accetti la <a href="docs/EULA-UNICA-Beta-v1.2.txt">licenza d'uso (EULA Beta v1.2)</a>.</p>
+    <h2 style="font-size:clamp(28px,4vw,36px);line-height:1.15">Scarica UNICA 1.1 Beta</h2>
+    <p>UNICA è gratuita. Quello che crei è tuo: puoi usarlo liberamente, anche per lavoro. Ti chiediamo una cosa sola: dichiarare che è stato creato con UNICA. Scaricando accetti la <a href="docs/EULA-UNICA-Beta-v1.3.txt">licenza d'uso (EULA Beta v1.3)</a>.</p>
     <div class="row">
-      <a class="btn btn-primary" href="https://github.com/umbertomaravigna61-debug/unica/releases/latest/download/UNICA-Setup-1.0.0-beta.exe"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>UNICA-Setup-1.0.0-beta.exe</a>
-      <span style="color:var(--muted);font-size:15px">160 MB · Windows 64 bit · build del 10 ottobre 2026</span>
+      <a class="btn btn-primary" href="https://github.com/umbertomaravigna61-debug/unica/releases/latest/download/UNICA-Setup-1.1.0-beta.exe"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>UNICA-Setup-1.1.0-beta.exe</a>
+      <span style="color:var(--muted);font-size:15px">160 MB · Windows 64 bit · build del 21 ottobre 2026</span>
     </div>
     <div style="display:flex;flex-direction:column;gap:6px">
       <span style="font-size:14px;color:var(--muted)">SHA-256 del file</span>
-      <code class="hash mono">6a63eeb580eca264e4c85974087872acc9dbdf971d422278c8fb411ea01ed9d9</code>
+      <code class="hash mono">a4afc077d043ba1e1368f13e94cc11283d06c011c377708d274ce11289f3dea6</code>
     </div>
     <p class="note">Il setup della beta non è ancora firmato digitalmente: Windows può mostrare un avviso di SmartScreen. Scegli «Ulteriori informazioni» e poi «Esegui comunque».</p>
+    <details>
+      <summary>Novità della 1.1</summary>
+      <ul style="margin:12px 0 0;color:var(--text2)">
+        <li><strong>Nuovo motore musicale YuE2-3B</strong>, predefinito: compone la canzone dal tuo testo (la durata segue il testo), con un cursore per i passi di rifinitura audio e un pulsante per rifinire di nuovo la stessa canzone senza ricomporla. Gira in FP8 su una scheda da 8 GB con una ricetta misurata (grafo CUDA, prefisso letto a blocchi).</li>
+        <li>ACE-Step 1.5 resta disponibile come motore alternativo.</li>
+        <li>Agent Bridge: <span class="mono">create_song</span> accetta motore, passi di rifinitura e la composizione da rifinire.</li>
+        <li>Messaggi più chiari quando la memoria della scheda non basta o la canzone viene chiusa al limite di durata.</li>
+        <li>Chi aggiorna dalla 1.0: i brani fatti con lo stesso seed non sono identici a quelli della 1.0 (motore diverso).</li>
+      </ul>
+    </details>
     <p class="small">Hai trovato un problema? <a href="https://github.com/umbertomaravigna61-debug/unica/issues">Segnalalo qui</a>.</p>
   </div>
 </section>
@@ -224,7 +236,8 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
   <div class="wrap" style="display:flex;flex-direction:column;gap:24px">
     <h2 style="font-size:32px">Licenze e sorgenti</h2>
     <div class="lic">
-      <a href="docs/EULA-UNICA-Beta-v1.2.txt"><strong>Licenza d'uso UNICA</strong><span>EULA Beta v1.2 · gratuita, opere libere con attribuzione</span></a>
+      <a href="docs/EULA-UNICA-Beta-v1.3.txt"><strong>Licenza d'uso UNICA</strong><span>EULA Beta v1.3 · gratuita, opere libere con attribuzione; condizioni dei singoli modelli all'art. 6-bis</span></a>
+      <a href="docs/YuE2-MODEL_LICENSE.txt"><strong>Licenza dei modelli YuE2</strong><span>CC BY-NC 4.0 con permission per i singoli creatori · testo completo degli autori</span></a>
       <a href="docs/Third-Party-Notices.txt"><strong>Componenti di terze parti</strong><span>Modelli, versioni e licenze di ciascuno</span></a>
       <a href="docs/python-packages-licenses.txt"><strong>Pacchetti Python</strong><span>380 pacchetti, con versione e licenza</span></a>
     </div>
@@ -249,7 +262,7 @@ footer .links{display:flex;flex-wrap:wrap;gap:18px}
 <footer>
   <div class="wrap">
     <div style="display:flex;flex-direction:column;gap:4px">
-      <span style="color:var(--text2)">UNICA — AI Creative Suite · Beta 1.0</span>
+      <span style="color:var(--text2)">UNICA — AI Creative Suite · Beta 1.1</span>
       <span>© 2026 Umberto Maravigna</span>
     </div>
     <div class="links">

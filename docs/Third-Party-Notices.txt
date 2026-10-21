@@ -1,4 +1,4 @@
-UNICA — AI Creative Suite (Beta 1.0)
+UNICA — AI Creative Suite (Beta 1.1)
 Componenti e modelli di terze parti
 
 UNICA utilizza i componenti e i modelli elencati qui sotto. Ciascuno resta soggetto alla propria licenza; i testi completi
@@ -7,8 +7,16 @@ vengono scaricati dalle fonti indicate, alla revisione indicata, e verificati co
 
 MODELLI
 - FLUX.2-klein-4B (immagini) — black-forest-labs/FLUX.2-klein-4B, revisione e7b7dc27f91d — Apache License 2.0.
+- YuE2-3B (musica cantata, motore predefinito dalla 1.1) — m-a-p/YuE2-3B, revisione 8f24312f1877 — pesi: CC BY-NC 4.0 con permission
+  aggiuntiva per i singoli creatori (testo completo: licenses\YuE2-MODEL_LICENSE.txt; fonte: https://github.com/multimodal-art-projection/YuE/blob/main/MODEL_LICENSE).
+  Codice di inferenza yue2_infer 0.1.5 (stesso repository): vedi la licenza nel pacchetto. I pesi sono scaricati dalla fonte ufficiale sul computer
+  dell'utente, dove la conversione FP8 avviene in memoria; nessun peso convertito viene distribuito.
+  Uso consentito tramite UNICA: generazione locale gratuita e non commerciale; i singoli creatori possono pubblicare e monetizzare la musica creata.
+  L'uso commerciale del modello da parte di società è valutato a parte dagli autori (contatto nel repository). Permesso scritto per il setup di
+  UNICA ricevuto dagli autori il 19/10/2026.
+- YuE2-Vae (decodificatore audio di YuE2) — m-a-p/YuE2-Vae, revisione 152733a19ad4 — stessa licenza di YuE2-3B.
 - ACE-Step 1.5 (musica: Turbo, LM 1.7B, Qwen3-Embedding-0.6B, VAE) — ACE-Step/Ace-Step1.5, revisione 19671f406d60 — MIT.
-- ACE-Step 1.5 XL-SFT (musica, motore predefinito) — ACE-Step/acestep-v15-xl-sft, revisione d06de46b4622 — MIT.
+- ACE-Step 1.5 XL-SFT (musica, motore alternativo dalla 1.1) — ACE-Step/acestep-v15-xl-sft, revisione d06de46b4622 — MIT.
 - LTX-2.5 22B distilled, quantizzazione GGUF Q4_0 (video) — molbal/LTX-2.5-GGUF, revisione 879172c54c1f — LTX-2.x Community License
   (testo completo: licenses\LTX-2.x-Community-License.txt).
 - LTX-2.5 componenti (VAE video e audio, upscaler latente, text encoder) — copia pubblica PowerProducer/unica-ltx-2.5-components
