@@ -1,0 +1,928 @@
+[12:30:55] ======================================================================
+[12:30:55] LABORATORIO YuE2 - giro rapido: 1 prove, 0 gia' fatte, 1 da fare
+[12:30:55] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[12:30:55] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[12:30:55] ======================================================================
+
+[12:30:55] PROVA 1/1: pop_it | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[12:30:57]    GPU prima della prova: 0 MiB usati, 49 C
+[12:31:05]    -> caricamento...
+[12:31:24]       ok in 19.0 s | picco VRAM 0.0 GB
+[12:31:24]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[12:33:03]       ok in 99.4 s | 1417 token, 14.3 token/s, picco VRAM 5.99 GB
+[12:33:03]    -> canzone (semantic)...
+[12:36:34]       ok in 210.9 s | 3715 token, 17.6 token/s, brano 148.6 s, picco VRAM 6.49 GB
+[12:36:34]    -> rifinitura NAR 2 passi...
+[12:37:16]       ok in 41.7 s | picco VRAM 5.49 GB
+[12:37:16]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[12:37:24]       ok in 7.9 s | picco VRAM 4.38 GB
+[12:37:24]    -> rifinitura NAR 4 passi...
+[12:37:26]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.34 GiB is allocated by P
+[12:37:26]    -> rifinitura NAR 32 passi...
+[12:37:26]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.34 GiB is allocated by P
+[12:37:28]    => RIUSCITA in 388.7 s
+
+[12:37:28] Laboratorio finito. Ora: python riassunto.py  (tabella in riassunto.md e riassunto.csv)
+[12:43:21] ======================================================================
+[12:43:21] LABORATORIO YuE2 - giro rapido: 1 prove, 0 gia' fatte, 1 da fare
+[12:43:21] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[12:43:21] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[12:43:21] ======================================================================
+
+[12:43:21] PROVA 1/1: pop_it | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[12:43:24]    GPU prima della prova: 0 MiB usati, 52 C
+[12:43:29]    -> caricamento...
+[12:43:35]       [UNICA] prefill in blocks of 512 tokens
+[12:43:35]       ok in 5.8 s | picco VRAM 0.0 GB
+[12:43:35]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[12:43:54]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[12:44:23]       ok in 48.5 s | 1549 token, 31.9 token/s, picco VRAM 5.99 GB
+[12:44:23]    -> canzone (semantic)...
+[12:44:23]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[12:45:37]       ok in 73.5 s | 3788 token, 51.6 token/s, brano 151.5 s, picco VRAM 6.51 GB
+[12:45:37]    -> rifinitura NAR 2 passi...
+[12:46:01]       ok in 24.1 s | picco VRAM 5.49 GB
+[12:46:01]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[12:46:08]       ok in 6.5 s | picco VRAM 4.38 GB
+[12:46:08]    -> rifinitura NAR 4 passi...
+[12:46:10]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.34 GiB is allocated by P
+[12:46:10]    -> rifinitura NAR 32 passi...
+[12:46:10]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.34 GiB is allocated by P
+[12:46:12]    => PARZIALE (passi riusciti: [2]) in 166.1 s
+
+[12:46:12] Laboratorio finito. Ora: python riassunto.py  (tabella in riassunto.md e riassunto.csv)
+[12:48:14] ======================================================================
+[12:48:14] LABORATORIO YuE2 - giro rapido: 1 prove, 0 gia' fatte, 1 da fare
+[12:48:14] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[12:48:14] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[12:48:14] ======================================================================
+
+[12:48:14] PROVA 1/1: pop_it | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[12:48:17]    GPU prima della prova: 0 MiB usati, 55 C
+[12:48:18]    -> caricamento...
+[12:48:24]       [UNICA] prefill in blocks of 512 tokens
+[12:48:24]       ok in 5.7 s | picco VRAM 0.0 GB
+[12:48:24]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[12:48:30]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[12:48:53]       ok in 28.7 s | 1312 token, 45.7 token/s, picco VRAM 5.99 GB
+[12:48:53]    -> canzone (semantic)...
+[12:48:53]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[12:49:59]       ok in 66.5 s | 3493 token, 52.5 token/s, brano 139.7 s, picco VRAM 6.49 GB
+[12:49:59]    -> rifinitura NAR 2 passi...
+[12:50:19]       ok in 19.6 s | picco VRAM 5.49 GB
+[12:50:19]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[12:50:26]       ok in 6.6 s | picco VRAM 2.76 GB
+[12:50:26]    -> rifinitura NAR 4 passi...
+[12:51:05]       ok in 39.2 s | picco VRAM 7.05 GB
+[12:51:05]    -> decodifica VAE (4 passi)...
+[12:51:10]       ok in 5.7 s | picco VRAM 3.01 GB
+[12:51:10]    -> rifinitura NAR 32 passi...
+[12:55:45]       ok in 274.3 s | picco VRAM 7.05 GB
+[12:55:45]    -> decodifica VAE (32 passi)...
+[12:55:51]       ok in 6.0 s | picco VRAM 3.01 GB
+[12:55:52]    => RIUSCITA in 454.2 s
+
+[12:55:52] Laboratorio finito. Ora: python riassunto.py  (tabella in riassunto.md e riassunto.csv)
+[13:02:02] ======================================================================
+[13:02:02] LABORATORIO YuE2 - giro completo: 25 prove, 1 gia' fatte, 24 da fare
+[13:02:02] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[13:02:02] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[13:02:02] ======================================================================
+
+[13:02:02] PROVA 1/24: pop_it | seed 11 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[13:02:05]    GPU prima della prova: 0 MiB usati, 49 C
+[13:02:06]    -> caricamento...
+[13:02:12]       ok in 5.9 s | picco VRAM 0.0 GB
+[13:02:12]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:02:20]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated b
+[13:02:22]    => FALLITA in 15.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated by PyTorch, and 69.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:02:22] PROVA 2/24: pop_it | seed 11 | YuE ufficiale (default) | passi NAR 32
+[13:02:22]    GPU prima della prova: 0 MiB usati, 52 C
+[13:02:24]    -> caricamento...
+[13:02:30]       ok in 6.1 s | picco VRAM 0.0 GB
+[13:02:30]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\modules\module.py:1367: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   return t.to(
+[13:02:36]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated b
+[13:02:38]    => FALLITA in 13.8 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated by PyTorch, and 17.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:02:38] PROVA 3/24: rock_it | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[13:02:38]    GPU prima della prova: 0 MiB usati, 53 C
+[13:02:41]    -> caricamento...
+[13:02:47]       [UNICA] prefill in blocks of 512 tokens
+[13:02:47]       ok in 6.2 s | picco VRAM 0.0 GB
+[13:02:47]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:02:54]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:03:36]       ok in 48.9 s | 2285 token, 46.7 token/s, picco VRAM 5.98 GB
+[13:03:36]    -> canzone (semantic)...
+[13:03:36]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:05:26]       ok in 109.8 s | 5522 token, 50.3 token/s, brano 220.9 s, picco VRAM 6.66 GB
+[13:05:26]    -> rifinitura NAR 2 passi...
+[13:06:12]       ok in 46.5 s | picco VRAM 5.49 GB
+[13:06:12]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[13:06:22]       ok in 10.0 s | picco VRAM 2.76 GB
+[13:06:22]    -> rifinitura NAR 4 passi...
+[13:07:56]       ok in 93.5 s | picco VRAM 7.05 GB
+[13:07:56]    -> decodifica VAE (4 passi)...
+[13:08:05]       ok in 9.4 s | picco VRAM 3.01 GB
+[13:08:05]    -> rifinitura NAR 32 passi...
+[13:19:15]       ok in 670.0 s | picco VRAM 7.05 GB
+[13:19:15]    -> decodifica VAE (32 passi)...
+[13:19:24]       ok in 9.3 s | picco VRAM 3.01 GB
+[13:19:25]    => RIUSCITA in 1006.3 s
+
+[13:19:25] PROVA 4/24: rock_it | seed 11 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[13:20:48]    GPU prima della prova: 0 MiB usati, 60 C
+[13:20:50]    -> caricamento...
+[13:20:57]       ok in 6.3 s | picco VRAM 0.0 GB
+[13:20:57]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:21:05]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated b
+[13:21:06]    => FALLITA in 16.1 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated by PyTorch, and 73.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:21:06] PROVA 5/24: rock_it | seed 11 | YuE ufficiale (default) | passi NAR 32
+[13:21:18]    GPU prima della prova: 0 MiB usati, 60 C
+[13:21:19]    -> caricamento...
+[13:21:26]       ok in 6.8 s | picco VRAM 0.0 GB
+[13:21:26]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\modules\module.py:1367: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   return t.to(
+[13:21:32]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated b
+[13:21:34]    => FALLITA in 14.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated by PyTorch, and 17.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:21:34] PROVA 6/24: ballad_en | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[13:21:34]    GPU prima della prova: 0 MiB usati, 59 C
+[13:21:36]    -> caricamento...
+[13:21:43]       [UNICA] prefill in blocks of 512 tokens
+[13:21:43]       ok in 6.3 s | picco VRAM 0.0 GB
+[13:21:43]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:21:52]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:22:19]       ok in 36.4 s | 1462 token, 40.2 token/s, picco VRAM 5.97 GB
+[13:22:19]    -> canzone (semantic)...
+[13:22:19]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:24:11]       ok in 111.6 s | 5300 token, 47.5 token/s, brano 212.0 s, picco VRAM 6.49 GB
+[13:24:11]    -> rifinitura NAR 2 passi...
+[13:24:50]       ok in 39.5 s | picco VRAM 5.49 GB
+[13:24:50]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[13:25:00]       ok in 9.9 s | picco VRAM 2.76 GB
+[13:25:00]    -> rifinitura NAR 4 passi...
+[13:26:19]       ok in 78.5 s | picco VRAM 7.05 GB
+[13:26:19]    -> decodifica VAE (4 passi)...
+[13:26:27]       ok in 8.8 s | picco VRAM 3.01 GB
+[13:26:27]    -> rifinitura NAR 32 passi...
+[13:35:04]       ok in 516.4 s | picco VRAM 7.05 GB
+[13:35:04]    -> decodifica VAE (32 passi)...
+[13:35:12]       ok in 8.4 s | picco VRAM 3.01 GB
+[13:35:13]    => RIUSCITA in 818.2 s
+
+[13:35:13] PROVA 7/24: ballad_en | seed 11 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[13:35:27]    GPU prima della prova: 0 MiB usati, 59 C
+[13:35:29]    -> caricamento...
+[13:35:36]       ok in 6.7 s | picco VRAM 0.0 GB
+[13:35:36]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:35:46]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated b
+[13:35:47]    => FALLITA in 18.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated by PyTorch, and 80.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:35:47] PROVA 8/24: ballad_en | seed 11 | YuE ufficiale (default) | passi NAR 32
+[13:35:49]    GPU prima della prova: 0 MiB usati, 55 C
+[13:35:51]    -> caricamento...
+[13:35:57]       ok in 6.1 s | picco VRAM 0.0 GB
+[13:35:57]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\modules\module.py:1367: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   return t.to(
+[13:36:03]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated b
+[13:36:04]    => FALLITA in 13.3 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated by PyTorch, and 17.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:36:04] PROVA 9/24: rock_en | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[13:36:04]    GPU prima della prova: 0 MiB usati, 53 C
+[13:36:06]    -> caricamento...
+[13:36:12]       [UNICA] prefill in blocks of 512 tokens
+[13:36:12]       ok in 6.0 s | picco VRAM 0.0 GB
+[13:36:12]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:36:20]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:37:13]       ok in 60.7 s | 2875 token, 47.4 token/s, picco VRAM 5.96 GB
+[13:37:13]    -> canzone (semantic)...
+[13:37:13]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:39:05]       ok in 112.1 s | 5671 token, 50.6 token/s, brano 226.8 s, picco VRAM 6.76 GB
+[13:39:05]    -> rifinitura NAR 2 passi...
+[13:39:52]       ok in 46.8 s | picco VRAM 5.49 GB
+[13:39:52]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[13:40:02]       ok in 9.6 s | picco VRAM 2.76 GB
+[13:40:02]    -> rifinitura NAR 4 passi...
+[13:41:37]       ok in 95.1 s | picco VRAM 7.05 GB
+[13:41:37]    -> decodifica VAE (4 passi)...
+[13:41:45]       ok in 8.3 s | picco VRAM 3.01 GB
+[13:41:45]    -> rifinitura NAR 32 passi...
+[13:52:34]       ok in 648.5 s | picco VRAM 7.05 GB
+[13:52:34]    -> decodifica VAE (32 passi)...
+[13:52:42]       ok in 8.2 s | picco VRAM 3.01 GB
+[13:52:43]    => RIUSCITA in 997.4 s
+
+[13:52:43] PROVA 10/24: rock_en | seed 11 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[13:52:55]    GPU prima della prova: 0 MiB usati, 60 C
+[13:52:57]    -> caricamento...
+[13:53:04]       ok in 6.3 s | picco VRAM 0.0 GB
+[13:53:04]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:53:11]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated b
+[13:53:13]    => FALLITA in 16.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated by PyTorch, and 80.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:53:13] PROVA 11/24: rock_en | seed 11 | YuE ufficiale (default) | passi NAR 32
+[13:53:14]    GPU prima della prova: 0 MiB usati, 55 C
+[13:53:15]    -> caricamento...
+[13:53:21]       ok in 6.2 s | picco VRAM 0.0 GB
+[13:53:21]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\modules\module.py:1367: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   return t.to(
+[13:53:27]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated b
+[13:53:29]    => FALLITA in 13.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated by PyTorch, and 17.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[13:53:29] PROVA 12/24: coro_it | seed 11 | YuE di UNICA | passi NAR 2,4,32
+[13:53:29]    GPU prima della prova: 0 MiB usati, 53 C
+[13:53:31]    -> caricamento...
+[13:53:37]       [UNICA] prefill in blocks of 512 tokens
+[13:53:37]       ok in 6.1 s | picco VRAM 0.0 GB
+[13:53:37]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[13:53:46]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:54:10]       ok in 32.9 s | 1309 token, 39.8 token/s, picco VRAM 6.02 GB
+[13:54:10]    -> canzone (semantic)...
+[13:54:10]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[13:55:13]       ok in 62.3 s | 3276 token, 52.6 token/s, brano 131.0 s, picco VRAM 6.49 GB
+[13:55:13]    -> rifinitura NAR 2 passi...
+[13:55:30]       ok in 17.7 s | picco VRAM 5.49 GB
+[13:55:30]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[13:55:37]       ok in 6.2 s | picco VRAM 2.76 GB
+[13:55:37]    -> rifinitura NAR 4 passi...
+[13:56:13]       ok in 36.8 s | picco VRAM 7.05 GB
+[13:56:13]    -> decodifica VAE (4 passi)...
+[13:56:19]       ok in 5.1 s | picco VRAM 3.01 GB
+[13:56:19]    -> rifinitura NAR 32 passi...
+[14:00:14]       ok in 235.9 s | picco VRAM 7.05 GB
+[14:00:14]    -> decodifica VAE (32 passi)...
+[14:00:19]       ok in 5.0 s | picco VRAM 3.01 GB
+[14:00:21]    => RIUSCITA in 410.4 s
+
+[14:00:21] PROVA 13/24: coro_it | seed 11 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[14:00:33]    GPU prima della prova: 0 MiB usati, 59 C
+[14:00:35]    -> caricamento...
+[14:00:41]       ok in 6.4 s | picco VRAM 0.0 GB
+[14:00:41]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:00:50]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.89 GiB is allocated b
+[14:00:51]    => FALLITA in 16.4 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.89 GiB is allocated by PyTorch, and 58.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[14:00:51] PROVA 14/24: coro_it | seed 11 | YuE ufficiale (default) | passi NAR 32
+[14:00:52]    GPU prima della prova: 0 MiB usati, 55 C
+[14:00:53]    -> caricamento...
+[14:00:59]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:00:59]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\modules\module.py:1367: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   return t.to(
+[14:01:05]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated b
+[14:01:07]    => FALLITA in 13.4 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 24.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 951.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.93 GiB is allocated by PyTorch, and 17.51 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[14:01:07] PROVA 15/24: pop_it | seed 22 | YuE di UNICA | passi NAR 2,4,32
+[14:01:08]    GPU prima della prova: 0 MiB usati, 54 C
+[14:01:10]    -> caricamento...
+[14:01:16]       [UNICA] prefill in blocks of 512 tokens
+[14:01:16]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:01:16]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:01:25]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:01:52]       ok in 35.3 s | 1458 token, 41.2 token/s, picco VRAM 5.99 GB
+[14:01:52]    -> canzone (semantic)...
+[14:01:52]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:02:58]       ok in 66.2 s | 3570 token, 53.9 token/s, brano 142.8 s, picco VRAM 6.49 GB
+[14:02:58]    -> rifinitura NAR 2 passi...
+[14:03:18]       ok in 19.7 s | picco VRAM 5.49 GB
+[14:03:18]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[14:03:24]       ok in 6.7 s | picco VRAM 2.76 GB
+[14:03:24]    -> rifinitura NAR 4 passi...
+[14:04:05]       ok in 40.5 s | picco VRAM 7.05 GB
+[14:04:05]    -> decodifica VAE (4 passi)...
+[14:04:10]       ok in 5.5 s | picco VRAM 3.01 GB
+[14:04:10]    -> rifinitura NAR 32 passi...
+[14:08:34]       ok in 263.3 s | picco VRAM 7.05 GB
+[14:08:34]    -> decodifica VAE (32 passi)...
+[14:08:39]       ok in 5.6 s | picco VRAM 3.01 GB
+[14:08:40]    => RIUSCITA in 451.2 s
+
+[14:08:40] PROVA 16/24: pop_it | seed 22 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[14:08:59]    GPU prima della prova: 0 MiB usati, 58 C
+[14:09:02]    -> caricamento...
+[14:09:09]       ok in 6.3 s | picco VRAM 0.0 GB
+[14:09:09]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:09:17]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated b
+[14:09:18]    => FALLITA in 17.2 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated by PyTorch, and 69.95 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[14:09:18] PROVA 17/24: rock_it | seed 22 | YuE di UNICA | passi NAR 2,4,32
+[14:09:19]    GPU prima della prova: 0 MiB usati, 55 C
+[14:09:21]    -> caricamento...
+[14:09:27]       [UNICA] prefill in blocks of 512 tokens
+[14:09:27]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:09:27]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:09:35]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:10:12]       ok in 44.5 s | 2060 token, 46.3 token/s, picco VRAM 5.98 GB
+[14:10:12]    -> canzone (semantic)...
+[14:10:12]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:11:48]       ok in 96.5 s | 4999 token, 51.8 token/s, brano 200.0 s, picco VRAM 6.58 GB
+[14:11:48]    -> rifinitura NAR 2 passi...
+[14:12:24]       ok in 35.9 s | picco VRAM 5.49 GB
+[14:12:24]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[14:12:32]       ok in 8.2 s | picco VRAM 2.76 GB
+[14:12:32]    -> rifinitura NAR 4 passi...
+[14:13:45]       ok in 72.9 s | picco VRAM 7.05 GB
+[14:13:45]    -> decodifica VAE (4 passi)...
+[14:13:53]       ok in 7.3 s | picco VRAM 3.01 GB
+[14:13:53]    -> rifinitura NAR 32 passi...
+[14:22:11]       ok in 498.7 s | picco VRAM 7.05 GB
+[14:22:11]    -> decodifica VAE (32 passi)...
+[14:22:18]       ok in 7.2 s | picco VRAM 3.01 GB
+[14:22:20]    => RIUSCITA in 779.9 s
+
+[14:22:20] PROVA 18/24: rock_it | seed 22 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[14:22:32]    GPU prima della prova: 0 MiB usati, 59 C
+[14:22:34]    -> caricamento...
+[14:22:41]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:22:41]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:22:49]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated b
+[14:22:50]    => FALLITA in 16.6 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.88 GiB is allocated by PyTorch, and 73.27 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[14:22:50] PROVA 19/24: ballad_en | seed 22 | YuE di UNICA | passi NAR 2,4,32
+[14:22:50]    GPU prima della prova: 0 MiB usati, 56 C
+[14:22:53]    -> caricamento...
+[14:22:59]       [UNICA] prefill in blocks of 512 tokens
+[14:22:59]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:22:59]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:23:07]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:23:30]       ok in 30.8 s | 1204 token, 39.0 token/s, picco VRAM 5.97 GB
+[14:23:30]    -> canzone (semantic)...
+[14:23:30]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:25:10]       ok in 100.4 s | 5418 token, 53.9 token/s, brano 216.7 s, picco VRAM 6.43 GB
+[14:25:10]    -> rifinitura NAR 2 passi...
+[14:25:48]       ok in 37.4 s | picco VRAM 5.49 GB
+[14:25:48]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[14:25:57]       ok in 9.0 s | picco VRAM 2.76 GB
+[14:25:57]    -> rifinitura NAR 4 passi...
+[14:27:12]       ok in 75.1 s | picco VRAM 7.05 GB
+[14:27:12]    -> decodifica VAE (4 passi)...
+[14:27:19]       ok in 7.7 s | picco VRAM 3.01 GB
+[14:27:19]    -> rifinitura NAR 32 passi...
+[14:36:12]       ok in 532.9 s | picco VRAM 7.05 GB
+[14:36:12]    -> decodifica VAE (32 passi)...
+[14:36:20]       ok in 7.8 s | picco VRAM 3.01 GB
+[14:36:21]    => RIUSCITA in 809.6 s
+
+[14:36:21] PROVA 20/24: ballad_en | seed 22 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[14:36:34]    GPU prima della prova: 0 MiB usati, 59 C
+[14:36:36]    -> caricamento...
+[14:36:42]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:36:42]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:36:50]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated b
+[14:36:52]    => FALLITA in 16.2 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated by PyTorch, and 80.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[14:36:52] PROVA 21/24: rock_en | seed 22 | YuE di UNICA | passi NAR 2,4,32
+[14:36:52]    GPU prima della prova: 0 MiB usati, 55 C
+[14:36:55]    -> caricamento...
+[14:37:01]       [UNICA] prefill in blocks of 512 tokens
+[14:37:01]       ok in 6.1 s | picco VRAM 0.0 GB
+[14:37:01]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:37:09]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:37:44]       ok in 42.5 s | 1944 token, 45.7 token/s, picco VRAM 5.96 GB
+[14:37:44]    -> canzone (semantic)...
+[14:37:44]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:39:36]       ok in 112.6 s | 6000 token, 53.3 token/s, brano 240.0 s, CHIUSA AL TETTO, picco VRAM 6.56 GB
+[14:39:36]    -> rifinitura NAR 2 passi...
+[14:40:25]       ok in 48.6 s | picco VRAM 5.49 GB
+[14:40:25]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[14:40:35]       ok in 9.7 s | picco VRAM 2.76 GB
+[14:40:35]    -> rifinitura NAR 4 passi...
+[14:42:10]       ok in 95.5 s | picco VRAM 7.05 GB
+[14:42:10]    -> decodifica VAE (4 passi)...
+[14:42:19]       ok in 8.5 s | picco VRAM 3.01 GB
+[14:42:19]    -> rifinitura NAR 32 passi...
+[14:53:43]       ok in 684.3 s | picco VRAM 7.05 GB
+[14:53:43]    -> decodifica VAE (32 passi)...
+[14:53:51]       ok in 8.7 s | picco VRAM 3.01 GB
+[14:53:53]    => RIUSCITA in 1019.4 s
+
+[14:53:53] PROVA 22/24: rock_en | seed 22 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[14:54:05]    GPU prima della prova: 0 MiB usati, 59 C
+[14:54:07]    -> caricamento...
+[14:54:14]       ok in 6.3 s | picco VRAM 0.0 GB
+[14:54:14]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:54:21]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated b
+[14:54:23]    => FALLITA in 16.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.87 GiB is allocated by PyTorch, and 80.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[14:54:23] PROVA 23/24: coro_it | seed 22 | YuE di UNICA | passi NAR 2,4,32
+[14:54:23]    GPU prima della prova: 0 MiB usati, 57 C
+[14:54:26]    -> caricamento...
+[14:54:32]       [UNICA] prefill in blocks of 512 tokens
+[14:54:32]       ok in 6.2 s | picco VRAM 0.0 GB
+[14:54:32]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[14:54:40]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:55:04]       ok in 31.2 s | 1254 token, 40.2 token/s, picco VRAM 6.02 GB
+[14:55:04]    -> canzone (semantic)...
+[14:55:04]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[14:56:03]       ok in 59.8 s | 3189 token, 53.3 token/s, brano 127.6 s, picco VRAM 6.49 GB
+[14:56:03]    -> rifinitura NAR 2 passi...
+[14:56:20]       ok in 16.8 s | picco VRAM 5.49 GB
+[14:56:20]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[14:56:27]       ok in 6.2 s | picco VRAM 2.76 GB
+[14:56:27]    -> rifinitura NAR 4 passi...
+[14:57:01]       ok in 34.8 s | picco VRAM 7.05 GB
+[14:57:01]    -> decodifica VAE (4 passi)...
+[14:57:06]       ok in 5.1 s | picco VRAM 3.01 GB
+[14:57:06]    -> rifinitura NAR 32 passi...
+[15:00:48]       ok in 222.1 s | picco VRAM 7.05 GB
+[15:00:48]    -> decodifica VAE (32 passi)...
+[15:00:54]       ok in 5.1 s | picco VRAM 3.01 GB
+[15:00:55]    => RIUSCITA in 390.1 s
+
+[15:00:55] PROVA 24/24: coro_it | seed 22 | YuE ufficiale (opzioni 8 GB) | passi NAR 32,4
+[15:01:06]    GPU prima della prova: 0 MiB usati, 60 C
+[15:01:09]    -> caricamento...
+[15:01:15]       ok in 6.2 s | picco VRAM 0.0 GB
+[15:01:15]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[15:01:23]       ERRORE in partitura (plan): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.89 GiB is allocated b
+[15:01:24]    => FALLITA in 16.5 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 931.00 MiB is free. 5.96 GiB allowed; Of the allocated memory 5.89 GiB is allocated by PyTorch, and 58.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory
+
+[15:01:24] Laboratorio finito. Ora: python riassunto.py  (tabella in riassunto.md e riassunto.csv)
+[16:44:58] ======================================================================
+[16:44:58] PROVA DEL TETTO DI MEMORIA - ricetta UNICA, rock_en, seed 11, passi NAR 2,4, tetti [0.84, 0.86, 0.88, 0.9, 0.92]
+[16:44:58] ======================================================================
+
+[16:44:58] TETTO 84% (6.69 GiB su 7.96)
+[16:45:01]    GPU prima della prova: 0 MiB usati, 40 C
+[16:45:03]    -> caricamento...
+[16:45:09]       [UNICA] prefill in blocks of 512 tokens
+[16:45:09]       ok in 5.6 s | picco VRAM 0.0 GB
+[16:45:09]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[16:45:14]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:46:10]       ok in 60.9 s | 3133 token, 51.5 token/s, picco VRAM 5.96 GB
+[16:46:10]    -> canzone (semantic)...
+[16:46:10]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:46:10]       ERRORE in canzone (semantic): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 171.00 MiB is free. 6.69 GiB allowed; Of the allocated memory 6.55 GiB is allocated b
+[16:46:11]    => tetto 84%: FALLITA
+
+[16:46:11] TETTO 86% (6.85 GiB su 7.96)
+[16:46:12]    GPU prima della prova: 0 MiB usati, 60 C
+[16:46:14]    -> caricamento...
+[16:46:20]       [UNICA] prefill in blocks of 512 tokens
+[16:46:20]       ok in 6.1 s | picco VRAM 0.0 GB
+[16:46:20]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[16:46:28]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:47:19]       ok in 58.8 s | 2804 token, 47.7 token/s, picco VRAM 5.96 GB
+[16:47:19]    -> canzone (semantic)...
+[16:47:19]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:47:20]       ERRORE in canzone (semantic): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 33.00 MiB is free. 6.85 GiB allowed; Of the allocated memory 6.65 GiB is allocated by
+[16:47:22]    => tetto 86%: FALLITA
+
+[16:47:22] TETTO 88% (7.00 GiB su 7.96)
+[16:47:33]    GPU prima della prova: 0 MiB usati, 60 C
+[16:47:35]    -> caricamento...
+[16:47:42]       [UNICA] prefill in blocks of 512 tokens
+[16:47:42]       ok in 6.5 s | picco VRAM 0.0 GB
+[16:47:42]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[16:47:51]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:48:42]       ok in 60.3 s | 2804 token, 46.5 token/s, picco VRAM 5.96 GB
+[16:48:42]    -> canzone (semantic)...
+[16:48:42]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:50:33]       ok in 111.1 s | 5574 token, 50.2 token/s, brano 223.0 s, picco VRAM 6.76 GB
+[16:50:33]    -> rifinitura NAR 2 passi...
+[16:51:21]       ok in 48.0 s | picco VRAM 5.49 GB
+[16:51:21]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[16:51:31]       ok in 10.2 s | picco VRAM 2.76 GB
+[16:51:31]    -> rifinitura NAR 4 passi...
+[16:51:35]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 722.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 525.00 MiB is free. 7.00 GiB allowed; Of the allocated memory 6.25 GiB is allocated 
+[16:51:37]    => tetto 88%: PARZIALE (passi riusciti: [2])
+
+[16:51:37] TETTO 90% (7.16 GiB su 7.96)
+[16:52:27]    GPU prima della prova: 0 MiB usati, 60 C
+[16:52:29]    -> caricamento...
+[16:52:35]       [UNICA] prefill in blocks of 512 tokens
+[16:52:35]       ok in 6.4 s | picco VRAM 0.0 GB
+[16:52:35]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[16:52:45]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:53:46]       ok in 70.7 s | 3338 token, 47.2 token/s, picco VRAM 5.96 GB
+[16:53:46]    -> canzone (semantic)...
+[16:53:46]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[16:55:50]       ok in 123.9 s | 6000 token, 48.4 token/s, brano 240.0 s, CHIUSA AL TETTO, picco VRAM 6.86 GB
+[16:55:50]    -> rifinitura NAR 2 passi...
+[16:56:48]       ok in 57.7 s | picco VRAM 5.61 GB
+[16:56:48]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[16:56:58]       ok in 10.5 s | picco VRAM 2.76 GB
+[16:56:58]    -> rifinitura NAR 4 passi...
+[16:58:47]       ok in 109.2 s | picco VRAM 7.05 GB
+[16:58:47]    -> decodifica VAE (4 passi)...
+[16:58:57]       ok in 9.7 s | picco VRAM 3.01 GB
+[16:58:58]    => tetto 90%: RIUSCITA
+
+[16:58:58] TETTO 92% (7.32 GiB su 7.96)
+[17:00:10]    GPU prima della prova: 0 MiB usati, 60 C
+[17:00:13]    -> caricamento...
+[17:00:20]       [UNICA] prefill in blocks of 512 tokens
+[17:00:20]       ok in 6.8 s | picco VRAM 0.0 GB
+[17:00:20]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[17:00:29]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[17:01:26]       ok in 66.5 s | 3079 token, 46.3 token/s, picco VRAM 5.96 GB
+[17:01:26]    -> canzone (semantic)...
+[17:01:26]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[17:03:29]       ok in 122.6 s | 5993 token, 48.9 token/s, brano 239.7 s, picco VRAM 6.78 GB
+[17:03:29]    -> rifinitura NAR 2 passi...
+[17:04:25]       ok in 56.4 s | picco VRAM 5.56 GB
+[17:04:25]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[17:04:36]       ok in 10.8 s | picco VRAM 2.76 GB
+[17:04:36]    -> rifinitura NAR 4 passi...
+[17:06:27]       ok in 111.3 s | picco VRAM 7.05 GB
+[17:06:27]    -> decodifica VAE (4 passi)...
+[17:06:37]       ok in 9.8 s | picco VRAM 3.01 GB
+[17:06:38]    => tetto 92%: RIUSCITA
+
+[17:06:38] Prova del tetto finita. Ora: python riassunto.py
+[17:11:34] ======================================================================
+[17:11:34] LABORATORIO YuE2 - giro completo: 35 prove, 25 gia' fatte, 10 da fare
+[17:11:34] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[17:11:34] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[17:11:34] ======================================================================
+
+[17:11:34] PROVA 1/10: pop_it | seed 11 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[17:11:37]    GPU prima della prova: 0 MiB usati, 50 C
+[17:11:39]    -> caricamento...
+[17:11:44]       ok in 5.8 s | picco VRAM 0.0 GB
+[17:11:44]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[17:14:10]       ok in 145.3 s | 1373 token, 9.4 token/s, picco VRAM 6.0 GB
+[17:14:10]    -> canzone (semantic)...
+[17:21:42]       ok in 452.6 s | 3653 token, 8.1 token/s, brano 146.1 s, picco VRAM 6.84 GB
+[17:21:42]    -> rifinitura NAR 32 passi...
+[17:21:44]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.21 GiB is allocated by Py
+[17:21:44]    -> rifinitura NAR 4 passi...
+[17:21:44]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.21 GiB is allocated by Py
+[17:21:45]    => FALLITA in 607.6 s
+
+[17:21:45] PROVA 2/10: rock_it | seed 11 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[17:23:47]    GPU prima della prova: 0 MiB usati, 59 C
+[17:23:49]    -> caricamento...
+[17:23:55]       ok in 6.3 s | picco VRAM 0.0 GB
+[17:23:55]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[17:29:17]       ok in 321.4 s | 2318 token, 7.2 token/s, picco VRAM 6.02 GB
+[17:29:17]    -> canzone (semantic)...
+[17:29:17]       ERRORE in canzone (semantic): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 444.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 6.99 GiB is allocated by 
+[17:29:19]    => FALLITA in 329.6 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 444.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 6.99 GiB is allocated by PyTorch, and 153.76 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory 
+
+[17:29:19] PROVA 3/10: ballad_en | seed 11 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[17:29:46]    GPU prima della prova: 0 MiB usati, 60 C
+[17:29:48]    -> caricamento...
+[17:29:54]       ok in 6.0 s | picco VRAM 0.0 GB
+[17:29:54]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[17:33:08]       ok in 193.8 s | 1423 token, 7.3 token/s, picco VRAM 5.99 GB
+[17:33:08]    -> canzone (semantic)...
+[17:45:07]       ok in 719.4 s | 5444 token, 7.6 token/s, brano 217.8 s, picco VRAM 6.81 GB
+[17:45:07]    -> rifinitura NAR 32 passi...
+[17:45:09]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 58.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.29 GiB is allocated by P
+[17:45:09]    -> rifinitura NAR 4 passi...
+[17:45:09]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 58.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.29 GiB is allocated by P
+[17:45:10]    => FALLITA in 923.1 s
+
+[17:45:10] PROVA 4/10: rock_en | seed 11 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[17:46:28]    GPU prima della prova: 0 MiB usati, 60 C
+[17:46:29]    -> caricamento...
+[17:46:36]       ok in 6.3 s | picco VRAM 0.0 GB
+[17:46:36]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[17:53:01]       ok in 385.6 s | 3127 token, 8.1 token/s, picco VRAM 6.04 GB
+[17:53:01]    -> canzone (semantic)...
+[17:53:01]       ERRORE in canzone (semantic): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 720.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 6.71 GiB is allocated by 
+[17:53:03]    => FALLITA in 393.7 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 720.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 6.71 GiB is allocated by PyTorch, and 186.99 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory 
+
+[17:53:03] PROVA 5/10: coro_it | seed 11 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[17:53:47]    GPU prima della prova: 0 MiB usati, 60 C
+[17:53:49]    -> caricamento...
+[17:53:55]       ok in 6.0 s | picco VRAM 0.0 GB
+[17:53:55]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[17:57:28]       ok in 213.7 s | 1531 token, 7.2 token/s, picco VRAM 6.02 GB
+[17:57:28]    -> canzone (semantic)...
+[18:05:54]       ok in 505.4 s | 3597 token, 7.1 token/s, brano 143.9 s, picco VRAM 7.02 GB
+[18:05:54]    -> rifinitura NAR 32 passi...
+[18:05:56]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 1.91 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.24 GiB is allocated by Py
+[18:05:56]    -> rifinitura NAR 4 passi...
+[18:05:56]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 1.91 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.24 GiB is allocated by Py
+[18:05:57]    => FALLITA in 729.0 s
+
+[18:05:57] PROVA 6/10: pop_it | seed 22 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[18:07:31]    GPU prima della prova: 0 MiB usati, 60 C
+[18:07:33]    -> caricamento...
+[18:07:39]       ok in 6.2 s | picco VRAM 0.0 GB
+[18:07:39]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[19:43:54] ======================================================================
+[19:43:54] LABORATORIO YuE2 - giro rapido: 2 prove, 0 gia' fatte, 2 da fare
+[19:43:54] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[19:43:54] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[19:43:54] ======================================================================
+
+[19:43:54] PROVA 1/2: pop_it | seed 11 | YuE di UNICA + SCHEGGIA | passi NAR 4,32
+[19:43:56]    GPU prima della prova: 0 MiB usati, 47 C
+[19:43:58]    -> caricamento...
+[19:44:04]       [UNICA] prefill in blocks of 512 tokens
+[19:44:04]       [UNICA] SCHEGGIA on: head slice + fused FP8 projections
+[19:44:04]       ok in 6.0 s | picco VRAM 0.0 GB
+[19:44:04]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[19:44:12]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[19:44:37]       ok in 32.4 s | 1415 token, 43.7 token/s, picco VRAM 5.99 GB
+[19:44:37]    -> canzone (semantic)...
+[19:44:37]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[19:45:34]       ok in 57.5 s | 3738 token, 65.1 token/s, brano 149.5 s, picco VRAM 6.49 GB
+[19:45:34]    -> rifinitura NAR 4 passi...
+[19:46:14]       ok in 39.9 s | picco VRAM 5.6 GB
+[19:46:14]    -> decodifica VAE (4 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[19:46:21]       ok in 7.1 s | picco VRAM 3.64 GB
+[19:46:21]    -> rifinitura NAR 32 passi...
+[19:51:29]       ok in 307.4 s | picco VRAM 7.05 GB
+[19:51:29]    -> decodifica VAE (32 passi)...
+[19:51:35]       ok in 6.2 s | picco VRAM 3.01 GB
+[19:51:36]    => RIUSCITA in 458.8 s
+
+[19:51:36] PROVA 2/2: rock_en | seed 11 | YuE di UNICA + SCHEGGIA | passi NAR 4,32
+[19:52:37]    GPU prima della prova: 0 MiB usati, 60 C
+[19:52:39]    -> caricamento...
+[19:52:45]       [UNICA] prefill in blocks of 512 tokens
+[19:52:45]       [UNICA] SCHEGGIA on: head slice + fused FP8 projections
+[19:52:45]       ok in 6.2 s | picco VRAM 0.0 GB
+[19:52:45]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[19:52:54]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[19:53:45]       ok in 59.9 s | 3107 token, 51.9 token/s, picco VRAM 5.97 GB
+[19:53:45]    -> canzone (semantic)...
+[19:53:45]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[19:55:12]       ok in 86.8 s | 5288 token, 60.9 token/s, brano 211.5 s, picco VRAM 6.79 GB
+[19:55:12]    -> rifinitura NAR 4 passi...
+[19:56:45]       ok in 92.4 s | picco VRAM 6.28 GB
+[19:56:45]    -> decodifica VAE (4 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[19:56:54]       ok in 9.6 s | picco VRAM 3.64 GB
+[19:56:54]    -> rifinitura NAR 32 passi...
+[20:07:28]       ok in 633.9 s | picco VRAM 7.05 GB
+[20:07:28]    -> decodifica VAE (32 passi)...
+[20:07:37]       ok in 8.6 s | picco VRAM 3.01 GB
+[20:07:38]    => RIUSCITA in 899.9 s
+
+[20:07:38] Laboratorio finito. Ora: python riassunto.py  (tabella in riassunto.md e riassunto.csv)
+[20:34:00] ======================================================================
+[20:34:00] LABORATORIO YuE2 - giro completo: 35 prove, 30 gia' fatte, 5 da fare
+[20:34:00] Python: C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Scripts\python.exe
+[20:34:00] Ricetta UNICA da: C:\Users\Acer\Desktop\unica\app\vendor
+[20:34:00] ======================================================================
+
+[20:34:00] PROVA 1/5: pop_it | seed 22 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[20:34:02]    GPU prima della prova: 0 MiB usati, 47 C
+[20:34:04]    -> caricamento...
+[20:34:10]       ok in 5.7 s | picco VRAM 0.0 GB
+[20:34:10]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[20:35:54]       ok in 104.3 s | 1237 token, 11.9 token/s, picco VRAM 5.99 GB
+[20:35:54]    -> canzone (semantic)...
+[20:43:20]       ok in 445.6 s | 3372 token, 7.6 token/s, brano 134.9 s, picco VRAM 6.73 GB
+[20:43:20]    -> rifinitura NAR 32 passi...
+[20:43:21]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.18 GiB is allocated by Py
+[20:43:21]    -> rifinitura NAR 4 passi...
+[20:43:21]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.18 GiB is allocated by Py
+[20:43:22]    => FALLITA in 558.9 s
+
+[20:43:22] PROVA 2/5: rock_it | seed 22 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[20:44:18]    GPU prima della prova: 0 MiB usati, 60 C
+[20:44:19]    -> caricamento...
+[20:44:26]       ok in 6.2 s | picco VRAM 0.0 GB
+[20:44:26]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[20:49:17]       ok in 291.3 s | 2190 token, 7.5 token/s, picco VRAM 6.02 GB
+[20:49:17]    -> canzone (semantic)...
+[20:49:17]       ERRORE in canzone (semantic): MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 404.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 6.92 GiB is allocated by 
+[20:49:19]    => FALLITA in 299.3 s | OutOfMemoryError: CUDA out of memory. Tried to allocate 404.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 6.92 GiB is allocated by PyTorch, and 179.91 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory 
+
+[20:49:19] PROVA 3/5: ballad_en | seed 22 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[20:49:41]    GPU prima della prova: 0 MiB usati, 60 C
+[20:49:43]    -> caricamento...
+[20:49:49]       ok in 6.2 s | picco VRAM 0.0 GB
+[20:49:49]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[20:52:27]       ok in 157.8 s | 1147 token, 7.3 token/s, picco VRAM 5.98 GB
+[20:52:27]    -> canzone (semantic)...
+[21:04:16]       ok in 709.0 s | 5497 token, 7.8 token/s, brano 219.9 s, picco VRAM 6.63 GB
+[21:04:16]    -> rifinitura NAR 32 passi...
+[21:04:18]       ERRORE in rifinitura NAR 32 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 56.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.33 GiB is allocated by P
+[21:04:18]    -> rifinitura NAR 4 passi...
+[21:04:18]       ERRORE in rifinitura NAR 4 passi: MEMORIA ESAURITA (OOM) OutOfMemoryError: CUDA out of memory. Tried to allocate 56.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 0 bytes is free. 7.40 GiB allowed; Of the allocated memory 7.27 GiB is allocated by P
+[21:04:18]    => FALLITA in 876.7 s
+
+[21:04:18] PROVA 4/5: rock_en | seed 22 | YuE ufficiale + solo ritocco memoria | passi NAR 32,4
+[21:05:08]    GPU prima della prova: 0 MiB usati, 60 C
+[21:05:10]    -> caricamento...
+[21:05:16]       ok in 6.2 s | picco VRAM 0.0 GB
+[21:05:16]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[21:09:27]       ok in 250.2 s | 1904 token, 7.6 token/s, picco VRAM 6.0 GB
+[21:09:27]    -> canzone (semantic)...
+[21:11:39] ======================================================================
+[21:11:39] PROVA DEL TETTO LUNGO - ricetta UNICA, rock_en, tetto 9000 token (6 minuti), passi NAR 2,4
+[21:11:39] Domanda: con il tetto di YuE ufficiale (9000 token) la composizione sta ancora negli 8 GB?
+[21:11:39] ======================================================================
+
+[21:11:39] TETTO LUNGO: rock_en | seed 11 | 9000 token
+[21:11:47]    GPU prima della prova: 0 MiB usati, 60 C
+[21:11:49]    -> caricamento...
+[21:11:55]       [UNICA] prefill in blocks of 512 tokens
+[21:11:55]       ok in 5.9 s | picco VRAM 0.0 GB
+[21:11:55]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[21:12:01]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[21:12:53]       ok in 57.3 s | 2978 token, 52.0 token/s, picco VRAM 5.96 GB
+[21:12:53]    -> canzone (semantic)...
+[21:12:53]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[21:14:58]       ok in 125.5 s | 5796 token, 46.2 token/s, brano 231.8 s, picco VRAM 7.09 GB
+[21:14:58]    -> rifinitura NAR 2 passi...
+[21:15:54]       ok in 55.5 s | picco VRAM 5.49 GB
+[21:15:54]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[21:16:05]       ok in 11.3 s | picco VRAM 2.76 GB
+[21:16:05]    -> rifinitura NAR 4 passi...
+[21:17:53]       ok in 108.3 s | picco VRAM 7.05 GB
+[21:17:53]    -> decodifica VAE (4 passi)...
+[21:18:02]       ok in 9.1 s | picco VRAM 3.01 GB
+[21:18:03]    => seed 11: RIUSCITA in 375.2 s
+
+[21:18:03] TETTO LUNGO: rock_en | seed 22 | 9000 token
+[21:18:59]    GPU prima della prova: 0 MiB usati, 61 C
+[21:19:01]    -> caricamento...
+[21:19:07]       [UNICA] prefill in blocks of 512 tokens
+[21:19:07]       ok in 6.1 s | picco VRAM 0.0 GB
+[21:19:07]    -> partitura (plan)...
+      | `torch_dtype` is deprecated! Use `dtype` instead!
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\yue2\quantization.py:30: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+      |   self.register_buffer("weight", weight.to(device))
+[21:19:15]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[21:19:49]       ok in 41.9 s | 1852 token, 44.2 token/s, picco VRAM 5.96 GB
+[21:19:49]    -> canzone (semantic)...
+[21:19:49]       [UNICA] CUDA graph (FP8) on, attention backend cudnn
+[21:21:45]       ok in 116.2 s | 5578 token, 48.0 token/s, brano 223.1 s, picco VRAM 6.89 GB
+[21:21:45]    -> rifinitura NAR 2 passi...
+[21:22:32]       ok in 47.0 s | picco VRAM 5.49 GB
+[21:22:32]    -> decodifica VAE (2 passi)...
+      | C:\Users\Acer\UNICA-Chronos-Lab\yue2\.venv\Lib\site-packages\torch\nn\utils\weight_norm.py:144: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+      |   WeightNorm.apply(module, name, dim)
+[21:22:42]       ok in 10.1 s | picco VRAM 2.76 GB
+[21:22:42]    -> rifinitura NAR 4 passi...
+[21:24:15]       ok in 92.4 s | picco VRAM 7.05 GB
+[21:24:15]    -> decodifica VAE (4 passi)...
+[21:24:24]       ok in 9.2 s | picco VRAM 3.01 GB
+[21:24:25]    => seed 22: RIUSCITA in 325.3 s
+
+[21:24:25] Prova del tetto lungo finita.

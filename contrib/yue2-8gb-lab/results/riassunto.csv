@@ -1,0 +1,75 @@
+song,seed,config,load_s,plan_s,plan_tokens,plan_tok_s,plan_peak_gib,semantic_s,semantic_tokens,semantic_tok_s,song_s,truncated,semantic_peak_gib,peak_rss_gib,failed_at,failure,nar_steps,nar_s,nar_peak_gib,vae_s,vae_peak_gib,audio_s
+ballad_en,11,official defaults,6.1,5.3,,,5.93,,,,,,,6.62,plan,OOM,,,,,,
+ballad_en,11,"official, fp8+offload_ar, budget 8",6.7,9.5,,,5.87,,,,,,,7.5,plan,OOM,,,,,,
+ballad_en,11,official fp8+offload_ar + memory fraction 0.93 only,6.0,193.8,1423,7.3,5.99,719.4,5444,7.6,217.8,False,6.81,8.72,nar_32,OOM,4,0.4,7.29,,,
+ballad_en,11,official fp8+offload_ar + memory fraction 0.93 only,6.0,193.8,1423,7.3,5.99,719.4,5444,7.6,217.8,False,6.81,8.72,nar_32,OOM,32,1.7,7.29,,,
+ballad_en,11,UNICA recipe,6.3,36.4,1462,40.2,5.97,111.6,5300,47.5,212.0,False,6.49,12.98,,,2,39.5,5.49,9.9,2.76,212.0
+ballad_en,11,UNICA recipe,6.3,36.4,1462,40.2,5.97,111.6,5300,47.5,212.0,False,6.49,12.98,,,4,78.5,7.05,8.8,3.01,212.0
+ballad_en,11,UNICA recipe,6.3,36.4,1462,40.2,5.97,111.6,5300,47.5,212.0,False,6.49,12.98,,,32,516.4,7.05,8.4,3.01,212.0
+ballad_en,22,"official, fp8+offload_ar, budget 8",6.1,8.3,,,5.87,,,,,,,6.06,plan,OOM,,,,,,
+ballad_en,22,official fp8+offload_ar + memory fraction 0.93 only,6.2,157.8,1147,7.3,5.98,709.0,5497,7.8,219.9,False,6.63,8.76,nar_32,OOM,4,0.1,7.27,,,
+ballad_en,22,official fp8+offload_ar + memory fraction 0.93 only,6.2,157.8,1147,7.3,5.98,709.0,5497,7.8,219.9,False,6.63,8.76,nar_32,OOM,32,1.7,7.33,,,
+ballad_en,22,UNICA recipe,6.1,30.8,1204,39.0,5.97,100.4,5418,53.9,216.7,False,6.43,11.92,,,2,37.4,5.49,9.0,2.76,216.72
+ballad_en,22,UNICA recipe,6.1,30.8,1204,39.0,5.97,100.4,5418,53.9,216.7,False,6.43,11.92,,,4,75.1,7.05,7.7,3.01,216.72
+ballad_en,22,UNICA recipe,6.1,30.8,1204,39.0,5.97,100.4,5418,53.9,216.7,False,6.43,11.92,,,32,532.9,7.05,7.8,3.01,216.72
+coro_it,11,official defaults,6.1,5.5,,,5.93,,,,,,,6.2,plan,OOM,,,,,,
+coro_it,11,"official, fp8+offload_ar, budget 8",6.4,8.3,,,5.89,,,,,,,7.3,plan,OOM,,,,,,
+coro_it,11,official fp8+offload_ar + memory fraction 0.93 only,6.0,213.7,1531,7.2,6.02,505.4,3597,7.1,143.9,False,7.02,8.72,nar_32,OOM,4,0.1,7.24,,,
+coro_it,11,official fp8+offload_ar + memory fraction 0.93 only,6.0,213.7,1531,7.2,6.02,505.4,3597,7.1,143.9,False,7.02,8.72,nar_32,OOM,32,2.0,7.24,,,
+coro_it,11,UNICA recipe,6.1,32.9,1309,39.8,6.02,62.3,3276,52.6,131.0,False,6.49,12.53,,,2,17.7,5.49,6.2,2.76,131.04
+coro_it,11,UNICA recipe,6.1,32.9,1309,39.8,6.02,62.3,3276,52.6,131.0,False,6.49,12.53,,,4,36.8,7.05,5.1,3.01,131.04
+coro_it,11,UNICA recipe,6.1,32.9,1309,39.8,6.02,62.3,3276,52.6,131.0,False,6.49,12.53,,,32,235.9,7.05,5.0,3.01,131.04
+coro_it,22,"official, fp8+offload_ar, budget 8",6.2,7.9,,,5.89,,,,,,,7.13,plan,OOM,,,,,,
+coro_it,22,UNICA recipe,6.2,31.2,1254,40.2,6.02,59.8,3189,53.3,127.6,False,6.49,11.69,,,2,16.8,5.49,6.2,2.76,127.56
+coro_it,22,UNICA recipe,6.2,31.2,1254,40.2,6.02,59.8,3189,53.3,127.6,False,6.49,11.69,,,4,34.8,7.05,5.1,3.01,127.56
+coro_it,22,UNICA recipe,6.2,31.2,1254,40.2,6.02,59.8,3189,53.3,127.6,False,6.49,11.69,,,32,222.1,7.05,5.1,3.01,127.56
+pop_it,11,UNICA recipe + head slice + fused FP8 projections,6.0,32.4,1415,43.7,5.99,57.5,3738,65.1,149.5,False,6.49,11.48,,,4,39.9,5.6,7.1,3.64,149.52
+pop_it,11,UNICA recipe + head slice + fused FP8 projections,6.0,32.4,1415,43.7,5.99,57.5,3738,65.1,149.5,False,6.49,11.48,,,32,307.4,7.05,6.2,3.01,149.52
+pop_it,11,official defaults,6.1,5.8,,,5.93,,,,,,,5.62,plan,OOM,,,,,,
+pop_it,11,"official, fp8+offload_ar, budget 8",5.9,8.1,,,5.88,,,,,,,6.59,plan,OOM,,,,,,
+pop_it,11,official fp8+offload_ar + memory fraction 0.93 only,5.8,145.3,1373,9.4,6.0,452.6,3653,8.1,146.1,False,6.84,8.76,nar_32,OOM,4,0.1,7.21,,,
+pop_it,11,official fp8+offload_ar + memory fraction 0.93 only,5.8,145.3,1373,9.4,6.0,452.6,3653,8.1,146.1,False,6.84,8.76,nar_32,OOM,32,1.9,7.21,,,
+pop_it,11,UNICA recipe,5.7,28.7,1312,45.7,5.99,66.5,3493,52.5,139.7,False,6.49,11.46,,,2,19.6,5.49,6.6,2.76,139.72
+pop_it,11,UNICA recipe,5.7,28.7,1312,45.7,5.99,66.5,3493,52.5,139.7,False,6.49,11.46,,,4,39.2,7.05,5.7,3.01,139.72
+pop_it,11,UNICA recipe,5.7,28.7,1312,45.7,5.99,66.5,3493,52.5,139.7,False,6.49,11.46,,,32,274.3,7.05,6.0,3.01,139.72
+pop_it,22,"official, fp8+offload_ar, budget 8",6.3,8.1,,,5.88,,,,,,,5.79,plan,OOM,,,,,,
+pop_it,22,official fp8+offload_ar + memory fraction 0.93 only,5.7,104.3,1237,11.9,5.99,445.6,3372,7.6,134.9,False,6.73,8.72,nar_32,OOM,4,0.0,7.18,,,
+pop_it,22,official fp8+offload_ar + memory fraction 0.93 only,5.7,104.3,1237,11.9,5.99,445.6,3372,7.6,134.9,False,6.73,8.72,nar_32,OOM,32,1.5,7.18,,,
+pop_it,22,UNICA recipe,6.1,35.3,1458,41.2,5.99,66.2,3570,53.9,142.8,False,6.49,12.36,,,2,19.7,5.49,6.7,2.76,142.8
+pop_it,22,UNICA recipe,6.1,35.3,1458,41.2,5.99,66.2,3570,53.9,142.8,False,6.49,12.36,,,4,40.5,7.05,5.5,3.01,142.8
+pop_it,22,UNICA recipe,6.1,35.3,1458,41.2,5.99,66.2,3570,53.9,142.8,False,6.49,12.36,,,32,263.3,7.05,5.6,3.01,142.8
+rock_en,11,UNICA recipe + head slice + fused FP8 projections,6.2,59.9,3107,51.9,5.97,86.8,5288,60.9,211.5,False,6.79,11.6,,,4,92.4,6.28,9.6,3.64,211.52
+rock_en,11,UNICA recipe + head slice + fused FP8 projections,6.2,59.9,3107,51.9,5.97,86.8,5288,60.9,211.5,False,6.79,11.6,,,32,633.9,7.05,8.6,3.01,211.52
+rock_en,11,official defaults,6.2,5.9,,,5.93,,,,,,,5.59,plan,OOM,,,,,,
+rock_en,11,"official, fp8+offload_ar, budget 8",6.3,7.7,,,5.87,,,,,,,6.64,plan,OOM,,,,,,
+rock_en,11,official fp8+offload_ar + memory fraction 0.93 only,6.3,385.6,3127,8.1,6.04,0.0,,,,,6.71,8.72,semantic,OOM,,,,,,
+rock_en,11,UNICA recipe,6.0,60.7,2875,47.4,5.96,112.1,5671,50.6,226.8,False,6.76,12.81,,,2,46.8,5.49,9.6,2.76,226.84
+rock_en,11,UNICA recipe,6.0,60.7,2875,47.4,5.96,112.1,5671,50.6,226.8,False,6.76,12.81,,,4,95.1,7.05,8.3,3.01,226.84
+rock_en,11,UNICA recipe,6.0,60.7,2875,47.4,5.96,112.1,5671,50.6,226.8,False,6.76,12.81,,,32,648.5,7.05,8.2,3.01,226.84
+rock_en,11,"UNICA recipe, memory cap 84%",5.6,60.9,3133,51.5,5.96,0.1,,,,,6.55,8.79,semantic,OOM,,,,,,
+rock_en,11,"UNICA recipe, memory cap 86%",6.1,58.8,2804,47.7,5.96,0.9,,,,,6.71,8.78,semantic,OOM,,,,,,
+rock_en,11,"UNICA recipe, memory cap 88%",6.5,60.3,2804,46.5,5.96,111.1,5574,50.2,223.0,False,6.76,11.48,nar_4,OOM,2,48.0,5.49,10.2,2.76,222.96
+rock_en,11,"UNICA recipe, memory cap 88%",6.5,60.3,2804,46.5,5.96,111.1,5574,50.2,223.0,False,6.76,11.48,nar_4,OOM,4,3.4,6.24,,,
+rock_en,11,"UNICA recipe, memory cap 90%",6.4,70.7,3338,47.2,5.96,123.9,6000,48.4,240.0,True,6.86,11.48,,,2,57.7,5.61,10.5,2.76,240.0
+rock_en,11,"UNICA recipe, memory cap 90%",6.4,70.7,3338,47.2,5.96,123.9,6000,48.4,240.0,True,6.86,11.48,,,4,109.2,7.05,9.7,3.01,240.0
+rock_en,11,"UNICA recipe, memory cap 92%",6.8,66.5,3079,46.3,5.96,122.6,5993,48.9,239.7,False,6.78,11.45,,,2,56.4,5.56,10.8,2.76,239.72
+rock_en,11,"UNICA recipe, memory cap 92%",6.8,66.5,3079,46.3,5.96,122.6,5993,48.9,239.7,False,6.78,11.45,,,4,111.3,7.05,9.8,3.01,239.72
+rock_en,11,"UNICA recipe, token cap 9000 (6 min)",5.9,57.3,2978,52.0,5.96,125.5,5796,46.2,231.8,False,7.09,11.44,,,2,55.5,5.49,11.3,2.76,231.84
+rock_en,11,"UNICA recipe, token cap 9000 (6 min)",5.9,57.3,2978,52.0,5.96,125.5,5796,46.2,231.8,False,7.09,11.44,,,4,108.3,7.05,9.1,3.01,231.84
+rock_en,22,"official, fp8+offload_ar, budget 8",6.3,7.8,,,5.87,,,,,,,6.55,plan,OOM,,,,,,
+rock_en,22,UNICA recipe,6.1,42.5,1944,45.7,5.96,112.6,6000,53.3,240.0,True,6.56,11.79,,,2,48.6,5.49,9.7,2.76,240.0
+rock_en,22,UNICA recipe,6.1,42.5,1944,45.7,5.96,112.6,6000,53.3,240.0,True,6.56,11.79,,,4,95.5,7.05,8.5,3.01,240.0
+rock_en,22,UNICA recipe,6.1,42.5,1944,45.7,5.96,112.6,6000,53.3,240.0,True,6.56,11.79,,,32,684.3,7.05,8.7,3.01,240.0
+rock_en,22,"UNICA recipe, token cap 9000 (6 min)",6.1,41.9,1852,44.2,5.96,116.2,5578,48.0,223.1,False,6.89,11.44,,,2,47.0,5.49,10.1,2.76,223.12
+rock_en,22,"UNICA recipe, token cap 9000 (6 min)",6.1,41.9,1852,44.2,5.96,116.2,5578,48.0,223.1,False,6.89,11.44,,,4,92.4,7.05,9.2,3.01,223.12
+rock_it,11,official defaults,6.8,6.1,,,5.93,,,,,,,5.9,plan,OOM,,,,,,
+rock_it,11,"official, fp8+offload_ar, budget 8",6.3,8.0,,,5.88,,,,,,,5.88,plan,OOM,,,,,,
+rock_it,11,official fp8+offload_ar + memory fraction 0.93 only,6.3,321.4,2318,7.2,6.02,0.0,,,,,7.01,8.73,semantic,OOM,,,,,,
+rock_it,11,UNICA recipe,6.2,48.9,2285,46.7,5.98,109.8,5522,50.3,220.9,False,6.66,12.61,,,2,46.5,5.49,10.0,2.76,220.88
+rock_it,11,UNICA recipe,6.2,48.9,2285,46.7,5.98,109.8,5522,50.3,220.9,False,6.66,12.61,,,4,93.5,7.05,9.4,3.01,220.88
+rock_it,11,UNICA recipe,6.2,48.9,2285,46.7,5.98,109.8,5522,50.3,220.9,False,6.66,12.61,,,32,670.0,7.05,9.3,3.01,220.88
+rock_it,22,"official, fp8+offload_ar, budget 8",6.1,8.2,,,5.88,,,,,,,6.75,plan,OOM,,,,,,
+rock_it,22,official fp8+offload_ar + memory fraction 0.93 only,6.2,291.3,2190,7.5,6.02,0.0,,,,,6.94,8.73,semantic,OOM,,,,,,
+rock_it,22,UNICA recipe,6.1,44.5,2060,46.3,5.98,96.5,4999,51.8,200.0,False,6.58,12.41,,,2,35.9,5.49,8.2,2.76,199.96
+rock_it,22,UNICA recipe,6.1,44.5,2060,46.3,5.98,96.5,4999,51.8,200.0,False,6.58,12.41,,,4,72.9,7.05,7.3,3.01,199.96
+rock_it,22,UNICA recipe,6.1,44.5,2060,46.3,5.98,96.5,4999,51.8,200.0,False,6.58,12.41,,,32,498.7,7.05,7.2,3.01,199.96
