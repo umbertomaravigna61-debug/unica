@@ -1,0 +1,40 @@
+GPU NVIDIA GeForce RTX 5060 Laptop GPU | torch 2.10.0+cu128 | FlashAttention compilata: False
+forma del modello: 16 teste query, 8 teste chiavi/valori (GQA x2), head_dim 128  [<MODELS>\yue2\hf_cache\hub\models--m-a-p--YuE2-3B\snapshots\8f24312f187763b9854adeec87e437e2b03bbff1\config.json]
+
+=== L = 4862 token (rifinitura, prefill causale) ===
+  main oggi: GQA nativo, kernel scelto da PyTorch        90.1 ms | memoria in piu'  3.44 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986595
+    GQA nativo, forzato EFFICIENT                    NON VA: RuntimeError: No available kernel. Aborting execution.
+    GQA nativo, forzato cuDNN                             3.1 ms | memoria in piu'  0.02 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986593
+    GQA nativo, forzato MATH (quello che resta)          87.7 ms | memoria in piu'  3.44 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986595
+  #273: k/v duplicati, kernel scelto da PyTorch           7.1 ms | memoria in piu'  0.02 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986594
+    k/v duplicati, forzato EFFICIENT                      7.0 ms | memoria in piu'  0.02 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986594
+    k/v duplicati, forzato cuDNN                          3.1 ms | memoria in piu'  0.02 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986593
+  NOSTRA ricetta: blocchi 256, GQA nativo                52.2 ms | memoria in piu'  0.30 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986595
+    blocchi 256, k/v duplicati (efficient)               13.3 ms | memoria in piu'  0.04 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986594
+    blocchi 1024, k/v duplicati (efficient)               9.7 ms | memoria in piu'  0.04 GiB | errore medio 2.8e-03 max 4.2e-02 | coseno 0.986594
+
+=== L = 7000 token (rifinitura, prefill causale) ===
+  main oggi: GQA nativo, kernel scelto da PyTorch       193.1 ms | memoria in piu'  7.02 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+    GQA nativo, forzato EFFICIENT                    NON VA: RuntimeError: No available kernel. Aborting execution.
+    GQA nativo, forzato cuDNN                             5.9 ms | memoria in piu'  0.03 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+    GQA nativo, forzato MATH (quello che resta)         187.1 ms | memoria in piu'  7.02 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+  #273: k/v duplicati, kernel scelto da PyTorch          16.7 ms | memoria in piu'  0.03 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+    k/v duplicati, forzato EFFICIENT                     16.6 ms | memoria in piu'  0.03 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+    k/v duplicati, forzato cuDNN                          6.2 ms | memoria in piu'  0.03 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+  NOSTRA ricetta: blocchi 256, GQA nativo               110.9 ms | memoria in piu'  0.43 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+    blocchi 256, k/v duplicati (efficient)               22.6 ms | memoria in piu'  0.05 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+    blocchi 1024, k/v duplicati (efficient)              19.6 ms | memoria in piu'  0.06 GiB | errore medio 2.0e-03 max 2.7e-02 | coseno 0.990473
+
+=== L = 9435 token (rifinitura, prefill causale) ===
+  main oggi: GQA nativo, kernel scelto da PyTorch      9150.0 ms | memoria in piu' 12.63 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993212
+    GQA nativo, forzato EFFICIENT                    NON VA: RuntimeError: No available kernel. Aborting execution.
+    GQA nativo, forzato cuDNN                            11.5 ms | memoria in piu'  0.04 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993211
+    GQA nativo, forzato MATH (quello che resta)        9129.7 ms | memoria in piu' 12.63 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993212
+  #273: k/v duplicati, kernel scelto da PyTorch          26.2 ms | memoria in piu'  0.04 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993210
+    k/v duplicati, forzato EFFICIENT                     26.2 ms | memoria in piu'  0.04 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993210
+    k/v duplicati, forzato cuDNN                         11.6 ms | memoria in piu'  0.04 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993211
+  NOSTRA ricetta: blocchi 256, GQA nativo               208.0 ms | memoria in piu'  0.57 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993212
+    blocchi 256, k/v duplicati (efficient)               42.3 ms | memoria in piu'  0.07 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993210
+    blocchi 1024, k/v duplicati (efficient)              35.6 ms | memoria in piu'  0.07 GiB | errore medio 1.4e-03 max 1.8e-02 | coseno 0.993210
+
+Nota: per strato. La rifinitura chiama questa attenzione una volta per strato nel prefill e poi a ogni passo ODE.

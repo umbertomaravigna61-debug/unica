@@ -1,0 +1,80 @@
+[13:05:53] PROVA PR #271 | giro rapido | 4 prove da fare | python <LAB_ROOT>\.venv\Scripts\python.exe
+[13:05:53] --- prova 1/4: rock_en seed 11 | #273 @ 8daaa70 --low-vram, default (bf16, riserva 2 GiB, nessun ritocco) | passi NAR 32,4
+[13:05:57]    inizio load
+[13:06:21]    fine load: 24.3 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[13:06:21]    inizio plan
+[13:07:40]    fine plan: 78.5 s | tokens=2586 | tok_per_s=33.0 | peak_alloc_gib=4.57 | peak_reserved_gib=4.7
+[13:07:40]    inizio semantic
+[13:10:49]    fine semantic: 189.0 s | tokens=4815 | tok_per_s=25.5 | song_seconds=192.6 | peak_alloc_gib=5.19 | peak_reserved_gib=5.38
+[13:10:49]    inizio nar_32
+[13:12:36]    fine nar_32: 107.5 s | peak_alloc_gib=5.28 | peak_reserved_gib=5.54
+[13:12:36]    inizio vae_32
+[13:12:44]    fine vae_32: 7.9 s | peak_alloc_gib=2.71 | peak_reserved_gib=5.67
+[13:12:44]    inizio nar_4
+[13:13:03]    fine nar_4: 18.7 s | peak_alloc_gib=5.53 | peak_reserved_gib=5.81
+[13:13:03]    inizio vae_4
+[13:13:10]    fine vae_4: 7.3 s | peak_alloc_gib=2.95 | peak_reserved_gib=5.93
+[13:13:12]    esito: OK in 438 s
+[13:13:12] --- prova 2/4: rock_en seed 11 | #273 @ 8daaa70 --low-vram + fp8, budget 8 (riserva 2 GiB, nessun ritocco) | passi NAR 32,4
+[13:13:14]    inizio load
+[13:13:22]    fine load: 8.0 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[13:13:22]    inizio plan
+[13:17:17]    fine plan: 234.9 s | tokens=2387 | tok_per_s=10.2 | peak_alloc_gib=3.23 | peak_reserved_gib=3.33
+[13:17:17]    inizio semantic
+[13:26:53]    fine semantic: 575.4 s | tokens=4634 | tok_per_s=8.1 | song_seconds=185.4 | peak_alloc_gib=3.95 | peak_reserved_gib=4.18
+[13:26:53]    inizio nar_32
+[13:28:35]    fine nar_32: 101.9 s | peak_alloc_gib=5.2 | peak_reserved_gib=5.39
+[13:28:35]    inizio vae_32
+[13:28:42]    fine vae_32: 7.1 s | peak_alloc_gib=1.63 | peak_reserved_gib=3.59
+[13:28:42]    inizio nar_4
+[13:28:58]    fine nar_4: 16.4 s | peak_alloc_gib=5.45 | peak_reserved_gib=5.63
+[13:28:58]    inizio vae_4
+[13:29:05]    fine vae_4: 6.9 s | peak_alloc_gib=1.88 | peak_reserved_gib=3.86
+[13:29:07]    esito: OK in 955 s
+[13:29:07] --- prova 3/4: pop_it seed 11 | #273 @ 8daaa70 --low-vram, default (bf16, riserva 2 GiB, nessun ritocco) | passi NAR 32,4
+[13:29:09]    inizio load
+[13:29:15]    fine load: 6.8 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[13:29:15]    inizio plan
+[13:30:04]    fine plan: 48.2 s | tokens=1506 | tok_per_s=31.3 | peak_alloc_gib=4.58 | peak_reserved_gib=4.7
+[13:30:04]    inizio semantic
+[13:32:33]    fine semantic: 149.2 s | tokens=4073 | tok_per_s=27.3 | song_seconds=162.9 | peak_alloc_gib=5.03 | peak_reserved_gib=5.18
+[13:32:33]    inizio nar_32
+[13:33:52]    fine nar_32: 79.1 s | peak_alloc_gib=5.01 | peak_reserved_gib=5.16
+[13:33:52]    inizio vae_32
+[13:33:58]    fine vae_32: 6.3 s | peak_alloc_gib=2.71 | peak_reserved_gib=5.67
+[13:33:58]    inizio nar_4
+[13:34:12]    fine nar_4: 14.0 s | peak_alloc_gib=5.26 | peak_reserved_gib=5.42
+[13:34:12]    inizio vae_4
+[13:34:18]    fine vae_4: 6.0 s | peak_alloc_gib=2.96 | peak_reserved_gib=5.68
+[13:34:20]    esito: OK in 313 s
+[13:34:20] --- prova 4/4: pop_it seed 11 | #273 @ 8daaa70 --low-vram + fp8, budget 8 (riserva 2 GiB, nessun ritocco) | passi NAR 32,4
+[13:34:22]    inizio load
+[13:34:29]    fine load: 6.8 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[13:34:29]    inizio plan
+[13:37:55]    fine plan: 206.1 s | tokens=1525 | tok_per_s=7.4 | peak_alloc_gib=3.26 | peak_reserved_gib=3.35
+[13:37:55]    inizio semantic
+[13:45:59]    fine semantic: 484.5 s | tokens=3766 | tok_per_s=7.8 | song_seconds=150.6 | peak_alloc_gib=3.82 | peak_reserved_gib=3.92
+[13:45:59]    inizio nar_32
+[13:47:12]    fine nar_32: 73.1 s | peak_alloc_gib=4.94 | peak_reserved_gib=5.11
+[13:47:12]    inizio vae_32
+[13:47:18]    fine vae_32: 6.0 s | peak_alloc_gib=1.63 | peak_reserved_gib=3.59
+[13:47:18]    inizio nar_4
+[13:47:31]    fine nar_4: 12.4 s | peak_alloc_gib=5.19 | peak_reserved_gib=5.37
+[13:47:31]    inizio vae_4
+[13:47:36]    fine vae_4: 5.8 s | peak_alloc_gib=1.88 | peak_reserved_gib=3.85
+[13:47:38]    esito: OK in 798 s
+
+[13:47:38] === RIASSUNTO PR #271 sulla RTX 5060 Laptop 8 GB ===
+[13:47:38] canzone    seed  modo             esito                                  plan tok/s sem tok/s  NAR32 s  NAR4 s
+[13:47:38] pop_it       11  pr271            FALLITA a nar_32: OOM                        30.9      27.8      1.2     2.2
+[13:47:38] pop_it       11  pr271_fp8        FALLITA a nar_32: OOM                         6.3       7.4      2.6     1.7
+[13:47:38] pop_it       11  pr271_fp8_mem    FALLITA a nar_32: OOM                         7.1       7.5      2.5     1.7
+[13:47:38] pop_it       11  pr271_mem        FALLITA a nar_32: OOM                        30.9      27.4      1.4     2.4
+[13:47:38] pop_it       11  pr273            ok                                           31.3      27.3     79.1    14.0
+[13:47:38] pop_it       11  pr273_fp8        ok                                            7.4       7.8     73.1    12.4
+[13:47:38] rock_en      11  pr271            FALLITA a semantic: OOM                      28.5                           
+[13:47:38] rock_en      11  pr271_fp8        FALLITA a nar_32: OOM                         6.8       7.5      3.2     1.7
+[13:47:38] rock_en      11  pr271_fp8_mem    FALLITA a nar_32: OOM                         6.9       7.6      2.7     1.7
+[13:47:38] rock_en      11  pr271_mem        FALLITA a nar_32: OOM                        33.9      25.5      1.4     2.3
+[13:47:38] rock_en      11  pr273            ok                                           33.0      25.5    107.5    18.7
+[13:47:38] rock_en      11  pr273_fp8        ok                                           10.2       8.1    101.9    16.4
