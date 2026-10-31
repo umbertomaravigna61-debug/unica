@@ -1,0 +1,28 @@
+yue2 da <LAB>\yue_pr273\src\yue2
+GPU NVIDIA GeForce RTX 5060 Laptop GPU | torch 2.10.0+cu128
+caricamento 7.7 s | argomenti: bf16, low_vram=True, memory_budget_gib=24 (CLI default + --low-vram)
+piano dal testo ABC salvato: 3187 token ABC, prefisso completo 3491 token (attesi 3187 / 3491)
+piano salvato in <LAB>\out_pr271\rock_en\seed11\pr273_piano_lungo\plan (plan.json, abc_tokens.npy, prefix.npy, score.abc, plan_manifest.json)
+   memoria prima della composizione: libera 6.88 GiB su 7.96 | allocata 0.00 | riservata 0.00 | picco allocata 0.00
+   prefill superato: primo token dopo 23.4 s
+   memoria dopo il prefill: libera 1.54 GiB su 7.96 | allocata 5.08 | riservata 5.29 | picco allocata 5.23
+   1 token, 0.0 tok/s
+   379 token, 9.9 tok/s
+   754 token, 14.1 tok/s
+   1128 token, 16.5 tok/s
+   1501 token, 18.0 tok/s
+   1873 token, 19.0 tok/s
+   2244 token, 19.8 tok/s
+   2615 token, 20.3 tok/s
+   2985 token, 20.8 tok/s
+   3354 token, 21.1 tok/s
+   3722 token, 21.4 tok/s
+   4091 token, 21.7 tok/s
+   4459 token, 21.9 tok/s
+   4827 token, 22.1 tok/s
+   5194 token, 22.2 tok/s
+   5561 token, 22.4 tok/s
+COMPOSIZIONE RIUSCITA: 5823 token (232.9 s di musica) in 259.5 s, 22.4 tok/s, troncata False
+   memoria alla fine: libera 1.54 GiB su 7.96 | allocata 4.06 | riservata 5.29 | picco allocata 5.23
+
+risultato in <LAB>\out_pr271\rock_en\seed11\pr273_piano_lungo\risultato.json

@@ -1,0 +1,17 @@
+{
+ "abc_tokens": 3187,
+ "prefix_tokens": 3491,
+ "code": "PR #273 @ 8daaa70",
+ "ok": true,
+ "semantic_tokens": 5823,
+ "seconds": 259.5,
+ "peak_alloc_gib": 5.23,
+ "free_gib": 1.54,
+ "total_gib": 7.96,
+ "allocated_gib": 4.06,
+ "reserved_gib": 5.29,
+ "env": {
+  "torch": "2.10.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU"
+ }
+}
