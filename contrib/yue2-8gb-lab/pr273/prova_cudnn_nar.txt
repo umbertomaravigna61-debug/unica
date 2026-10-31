@@ -1,0 +1,21 @@
+yue2 da <LAB>\yue_pr273\src\yue2
+GPU NVIDIA GeForce RTX 5060 Laptop GPU | torch 2.10.0+cu128
+token semantici: 4815 (rock_en seed 11, dalla prova #273)
+caricamento 7.3 s
+
+NAR 32 passi, #273 efficient: rifinitura  106.8 s | VAE   7.2 s | picco 5.26 GiB | chiamate {'#273 efficient': 1820}
+   contro la wav originale della prova #273: diff max 1.19e-07 | segnale/diff  128.9 dB | correlazione 1.000000
+
+NAR 32 passi, cuDNN GQA nativo: rifinitura   70.4 s | VAE   7.0 s | picco 5.50 GiB | chiamate {'cudnn': 1820}
+   contro la wav originale della prova #273: diff max 3.61e-01 | segnale/diff   30.3 dB | correlazione 0.999539
+   cuDNN contro #273 efficient (stessa sessione):  diff max 3.61e-01 | segnale/diff   30.3 dB | correlazione 0.999539
+
+NAR 4 passi, #273 efficient: rifinitura   17.6 s | VAE   7.0 s | picco 5.51 GiB | chiamate {'#273 efficient': 252}
+   contro la wav originale della prova #273: diff max 1.19e-07 | segnale/diff  129.0 dB | correlazione 1.000000
+
+NAR 4 passi, cuDNN GQA nativo: rifinitura   12.9 s | VAE   7.1 s | picco 5.51 GiB | chiamate {'cudnn': 252}
+   contro la wav originale della prova #273: diff max 5.17e-01 | segnale/diff   26.7 dB | correlazione 0.998943
+   cuDNN contro #273 efficient (stessa sessione):  diff max 5.17e-01 | segnale/diff   26.7 dB | correlazione 0.998943
+
+per confronto, quanto cambia l'audio tra 4 e 32 passi: diff max 8.89e-01 | segnale/diff   10.6 dB | correlazione 0.956880
+wav in <LAB>\out_pr271\rock_en\seed11\cudnn
