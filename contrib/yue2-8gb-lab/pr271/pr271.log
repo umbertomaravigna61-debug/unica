@@ -1,0 +1,114 @@
+[07:02:57] PROVA PR #271 | giro rapido | 6 prove da fare | python <LAB_ROOT>\.venv\Scripts\python.exe
+[07:02:57] --- prova 1/6: rock_en seed 11 | #271 --low-vram, default (bf16, riserva 2 GiB) | passi NAR 32,4
+[07:03:07]    inizio load
+[07:03:30]    fine load: 22.8 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[07:03:30]    inizio plan
+[07:05:22]    fine plan: 111.8 s | tokens=3187 | tok_per_s=28.5 | peak_alloc_gib=4.57 | peak_reserved_gib=4.7
+[07:05:22]    inizio semantic
+[07:05:22]    ERRORE in semantic: OutOfMemoryError: CUDA out of memory. Tried to allocate 744.00 MiB. GPU 0 has a total capacity of 7.96 GiB of which 1.38 GiB is free. 5.96 GiB allowed; Of the a (OOM)
+[07:05:24]    esito: FALLITA in 147 s
+[07:05:24] --- prova 2/6: rock_en seed 11 | #271 --low-vram + fp8, budget 8 (riserva 2 GiB) | passi NAR 32,4
+[07:05:26]    inizio load
+[07:05:34]    fine load: 8.4 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[07:05:34]    inizio plan
+[07:13:15]    fine plan: 460.9 s | tokens=3127 | tok_per_s=6.8 | peak_alloc_gib=3.31 | peak_reserved_gib=3.72
+[07:13:15]    inizio semantic
+[07:26:32]    fine semantic: 796.2 s | tokens=6000 | tok_per_s=7.5 | song_seconds=240.0 | peak_alloc_gib=5.53 | peak_reserved_gib=5.71
+[07:26:32]    inizio nar_32
+[07:26:35]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 5.30 GiB. GPU 0 has a total capacity of 7.96 GiB of which 1.81 GiB is free. 5.96 GiB allowed; Of the all (OOM)
+[07:26:35]    inizio nar_4
+[07:26:37]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 5.30 GiB. GPU 0 has a total capacity of 7.96 GiB of which 1.81 GiB is free. 5.96 GiB allowed; Of the all (OOM)
+[07:26:38]    esito: FALLITA in 1275 s
+[07:26:38] --- prova 3/6: rock_en seed 11 | #271 --low-vram + fp8, riserva -> 93% (solo questo ritocco) | passi NAR 32,4
+[07:26:44]    inizio load
+[07:26:51]    fine load: 6.6 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[07:26:51]    inizio plan
+[07:34:23]    fine plan: 452.8 s | tokens=3127 | tok_per_s=6.9 | peak_alloc_gib=3.31 | peak_reserved_gib=3.72
+[07:34:23]    inizio semantic
+[07:47:37]    fine semantic: 793.1 s | tokens=6000 | tok_per_s=7.6 | song_seconds=240.0 | peak_alloc_gib=5.53 | peak_reserved_gib=5.71
+[07:47:37]    inizio nar_32
+[07:47:39]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 5.30 GiB. GPU 0 has a total capacity of 7.96 GiB of which 1.81 GiB is free. 7.40 GiB allowed; Of the all (OOM)
+[07:47:39]    inizio nar_4
+[07:47:41]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 5.30 GiB. GPU 0 has a total capacity of 7.96 GiB of which 1.81 GiB is free. 7.40 GiB allowed; Of the all (OOM)
+[07:47:43]    esito: FALLITA in 1264 s
+[07:47:43] --- prova 4/6: pop_it seed 11 | #271 --low-vram, default (bf16, riserva 2 GiB) | passi NAR 32,4
+[07:47:44]    inizio load
+[07:47:52]    fine load: 7.1 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[07:47:52]    inizio plan
+[07:48:31]    fine plan: 39.8 s | tokens=1231 | tok_per_s=30.9 | peak_alloc_gib=4.58 | peak_reserved_gib=4.7
+[07:48:31]    inizio semantic
+[07:50:28]    fine semantic: 117.1 s | tokens=3249 | tok_per_s=27.8 | song_seconds=130.0 | peak_alloc_gib=5.33 | peak_reserved_gib=5.53
+[07:50:28]    inizio nar_32
+[07:50:30]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.43 GiB. GPU 0 has a total capacity of 7.96 GiB of which 2.28 GiB is free. 5.96 GiB allowed; Of the all (OOM)
+[07:50:30]    inizio nar_4
+[07:50:32]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.43 GiB. GPU 0 has a total capacity of 7.96 GiB of which 2.28 GiB is free. 5.96 GiB allowed; Of the all (OOM)
+[07:50:34]    esito: FALLITA in 171 s
+[07:50:34] --- prova 5/6: pop_it seed 11 | #271 --low-vram + fp8, budget 8 (riserva 2 GiB) | passi NAR 32,4
+[07:50:36]    inizio load
+[07:50:44]    fine load: 7.4 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[07:50:44]    inizio plan
+[07:54:22]    fine plan: 218.5 s | tokens=1373 | tok_per_s=6.3 | peak_alloc_gib=3.27 | peak_reserved_gib=3.38
+[07:54:22]    inizio semantic
+[08:02:35]    fine semantic: 492.4 s | tokens=3653 | tok_per_s=7.4 | song_seconds=146.1 | peak_alloc_gib=4.14 | peak_reserved_gib=4.18
+[08:02:35]    inizio nar_32
+[08:02:37]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 7.96 GiB of which 2.30 GiB is free. 5.96 GiB allowed; Of the all (OOM)
+[08:02:37]    inizio nar_4
+[08:02:39]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 7.96 GiB of which 2.30 GiB is free. 5.96 GiB allowed; Of the all (OOM)
+[08:02:41]    esito: FALLITA in 727 s
+[08:02:41] --- prova 6/6: pop_it seed 11 | #271 --low-vram + fp8, riserva -> 93% (solo questo ritocco) | passi NAR 32,4
+[08:02:43]    inizio load
+[08:02:49]    fine load: 6.3 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[08:02:49]    inizio plan
+[08:06:03]    fine plan: 193.9 s | tokens=1373 | tok_per_s=7.1 | peak_alloc_gib=3.27 | peak_reserved_gib=3.38
+[08:06:03]    inizio semantic
+[08:14:11]    fine semantic: 488.0 s | tokens=3653 | tok_per_s=7.5 | song_seconds=146.1 | peak_alloc_gib=4.14 | peak_reserved_gib=4.18
+[08:14:11]    inizio nar_32
+[08:14:13]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 7.96 GiB of which 595.00 MiB is free. 7.40 GiB allowed; Of the a (OOM)
+[08:14:13]    inizio nar_4
+[08:14:15]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 7.96 GiB of which 595.00 MiB is free. 7.40 GiB allowed; Of the a (OOM)
+[08:14:17]    esito: FALLITA in 696 s
+
+[08:14:17] === RIASSUNTO PR #271 sulla RTX 5060 Laptop 8 GB ===
+[08:14:17] canzone    seed  modo             esito                                  plan tok/s sem tok/s  NAR32 s  NAR4 s
+[08:14:17] pop_it       11  pr271            FALLITA a nar_32: OOM                        30.9      27.8      1.2     2.2
+[08:14:17] pop_it       11  pr271_fp8        FALLITA a nar_32: OOM                         6.3       7.4      2.6     1.7
+[08:14:17] pop_it       11  pr271_fp8_mem    FALLITA a nar_32: OOM                         7.1       7.5      2.5     1.7
+[08:14:17] rock_en      11  pr271            FALLITA a semantic: OOM                      28.5                           
+[08:14:17] rock_en      11  pr271_fp8        FALLITA a nar_32: OOM                         6.8       7.5      3.2     1.7
+[08:14:17] rock_en      11  pr271_fp8_mem    FALLITA a nar_32: OOM                         6.9       7.6      2.7     1.7
+[08:17:43] PROVA PR #271 | giro rapido | 2 prove da fare | python <LAB_ROOT>\.venv\Scripts\python.exe
+[08:17:43] --- prova 1/2: rock_en seed 11 | #271 --low-vram, bf16, riserva -> 93% (solo questo ritocco) | passi NAR 32,4
+[08:17:46]    inizio load
+[08:17:53]    fine load: 7.3 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[08:17:53]    inizio plan
+[08:19:07]    fine plan: 74.4 s | tokens=2519 | tok_per_s=33.9 | peak_alloc_gib=4.57 | peak_reserved_gib=4.7
+[08:19:07]    inizio semantic
+[08:22:38]    fine semantic: 211.0 s | tokens=5374 | tok_per_s=25.5 | song_seconds=215.0 | peak_alloc_gib=6.28 | peak_reserved_gib=6.47
+[08:22:38]    inizio nar_32
+[08:22:40]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 4.01 GiB. GPU 0 has a total capacity of 7.96 GiB of which 1.91 GiB is free. 7.40 GiB allowed; Of the all (OOM)
+[08:22:40]    inizio nar_4
+[08:22:42]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 4.01 GiB. GPU 0 has a total capacity of 7.96 GiB of which 1.91 GiB is free. 7.40 GiB allowed; Of the all (OOM)
+[08:22:44]    esito: FALLITA in 301 s
+[08:22:44] --- prova 2/2: pop_it seed 11 | #271 --low-vram, bf16, riserva -> 93% (solo questo ritocco) | passi NAR 32,4
+[08:22:46]    inizio load
+[08:22:55]    fine load: 8.5 s | peak_alloc_gib=0.0 | peak_reserved_gib=0.0
+[08:22:55]    inizio plan
+[08:23:39]    fine plan: 44.6 s | tokens=1377 | tok_per_s=30.9 | peak_alloc_gib=4.58 | peak_reserved_gib=4.7
+[08:23:39]    inizio semantic
+[08:25:53]    fine semantic: 133.5 s | tokens=3656 | tok_per_s=27.4 | song_seconds=146.2 | peak_alloc_gib=5.47 | peak_reserved_gib=5.6
+[08:25:53]    inizio nar_32
+[08:25:54]    ERRORE in nar_32: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.77 GiB. GPU 0 has a total capacity of 7.96 GiB of which 517.00 MiB is free. 7.40 GiB allowed; Of the a (OOM)
+[08:25:54]    inizio nar_4
+[08:25:57]    ERRORE in nar_4: OutOfMemoryError: CUDA out of memory. Tried to allocate 1.77 GiB. GPU 0 has a total capacity of 7.96 GiB of which 517.00 MiB is free. 7.40 GiB allowed; Of the a (OOM)
+[08:25:58]    esito: FALLITA in 195 s
+
+[08:25:58] === RIASSUNTO PR #271 sulla RTX 5060 Laptop 8 GB ===
+[08:25:58] canzone    seed  modo             esito                                  plan tok/s sem tok/s  NAR32 s  NAR4 s
+[08:25:58] pop_it       11  pr271            FALLITA a nar_32: OOM                        30.9      27.8      1.2     2.2
+[08:25:58] pop_it       11  pr271_fp8        FALLITA a nar_32: OOM                         6.3       7.4      2.6     1.7
+[08:25:58] pop_it       11  pr271_fp8_mem    FALLITA a nar_32: OOM                         7.1       7.5      2.5     1.7
+[08:25:58] pop_it       11  pr271_mem        FALLITA a nar_32: OOM                        30.9      27.4      1.4     2.4
+[08:25:58] rock_en      11  pr271            FALLITA a semantic: OOM                      28.5                           
+[08:25:58] rock_en      11  pr271_fp8        FALLITA a nar_32: OOM                         6.8       7.5      3.2     1.7
+[08:25:58] rock_en      11  pr271_fp8_mem    FALLITA a nar_32: OOM                         6.9       7.6      2.7     1.7
+[08:25:58] rock_en      11  pr271_mem        FALLITA a nar_32: OOM                        33.9      25.5      1.4     2.3
